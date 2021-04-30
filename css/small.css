@@ -16,11 +16,12 @@ header {
 
 h1 {
     margin-left: 40px;
-    font-size: 32px;
+    font-size: 32px;    
 }
 
 h2 {
     margin-left: 190px;
+    font-family: 'Noto Sans JP', sans-serif;
     }
 
 ul {
@@ -38,7 +39,6 @@ footer {
 }
 
 img {
-  float: right;
   width: 240px;
   margin-top: -60px;
   margin-right: 5px; 
