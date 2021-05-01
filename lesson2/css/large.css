@@ -7,9 +7,6 @@
 main {
     display: grid;
     grid-gap: 1em;
-}
-
-body {
     background-color: #cadae2;  
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #030a4e;
@@ -40,7 +37,7 @@ div {
     }
       
 img {
-        max-width: 100%;
+        max-width: 240px;
         border-radius: .5em;
         border: 1px solid #12263A;
         margin: auto;
