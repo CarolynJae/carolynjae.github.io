@@ -5,8 +5,10 @@
 }
 
 main {
-    display: grid;
-    grid-gap: 1em;
+  max-width: 767px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1em;
 }
 
 body {
@@ -34,7 +36,7 @@ h2 {
       font-family: 'Noto Sans JP', sans-serif;
       }
 
-div {
+section {
         background-color: white;
         padding: 1em;
     }
@@ -42,7 +44,7 @@ div {
 img {
         max-width: 100%;
         border-radius: .5em;
-        border: 1px solid #12263A;
+        border: 1px solid #030a4e;
         margin: auto;
       }
       
