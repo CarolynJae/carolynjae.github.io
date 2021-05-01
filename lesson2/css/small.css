@@ -1,7 +1,7 @@
 main {
   max-width: 900px;
   display: grid;
-  grid-template-columns: 1 fr;
+  grid-template-columns: 1fr;
   grid-gap: 1em;
   margin: auto;
 }
@@ -36,11 +36,10 @@ h3 {
   background-color: #030a4e;
   color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   border-radius: 15px;
-  padding: .5em;
+  padding: 1em;
   height: 2em;
-  text-justify: center;
 }
  
 section {
