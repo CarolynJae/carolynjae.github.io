@@ -1,0 +1,94 @@
+main {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .75rem;
+    margin: auto;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;  
+  }
+
+  nav ul li {
+    flex: 1 1 100%;    
+  }
+
+  nav a {
+    padding:1em;   
+      }
+
+  nav a:link, nav a:visited {
+    color: #ffffff;
+  }
+
+  nav a:hover {
+    color: #030a4e;
+    background-color: #ffffff;
+  }
+  
+  body {
+      margin: auto;
+      background-color: #cadae2;  
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: #030a4e;
+    }
+   
+  header {
+      background-color: #030a4e;
+      color: white;
+      text-align: center;
+      padding: 7.5px;
+      margin-left: 160px;
+      margin-right: 160px;
+      margin-top: 40px;  
+      border-radius: 15px;
+    }
+    
+  h1 {
+        font-size: 42px;    
+    }
+  
+  h2 {
+    margin-top: -.5em;
+  }
+  
+  h3 {
+    background-color: #030a4e;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 15px;
+    padding: 1em;
+    height: 2em;
+  }
+   
+  section {
+          background-color: white;
+          padding: 1em;
+          margin-top: 1em;
+          margin-bottom: 1em;
+      }
+        
+  img {
+          max-width: 100%;
+          border-radius: .5em;
+          border: 1px solid #030a4e;
+          margin: auto;
+        }
+        
+  footer {
+        background-color: #030a4e;
+        color: white;
+        padding: 10px;
+        margin-left: 160px;
+        margin-right: 160px;
+        border-radius: 15px;
+        text-align: center;
+    }
+    
+      
+  #byui {
+      color: white;
+    }
