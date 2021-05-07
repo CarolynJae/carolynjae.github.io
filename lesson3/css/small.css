@@ -2,13 +2,14 @@ main {
     max-width: 900px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: .75rem;
+    padding: 1em;    
     margin: auto;
+    background-color: white;
   }
 
   nav ul {
     list-style-type: none;
-    display: flex;  
+    display: block;  
   }
 
   nav ul li {
@@ -41,8 +42,7 @@ main {
       padding: 1em;
       margin-left: 160px;
       margin-right: 160px;
-      margin-top: 40px;  
-      border-radius: 15px;
+      margin-top: 40px;       
     }
     
   h1 {
@@ -50,28 +50,11 @@ main {
     }
   
   h2 {
-     margin-top: -.5em;
-  }
-  
-  h3 {
-    background-color: #030a4e;
-    color: white;
-    text-align: center;
-    font-size: 28px;
-    border-radius: 15px;
-    padding: .5em;
-    height: 1em;
-  }
-   
-  section {
-          background-color: white;
-          padding: .5em;
-          margin-top: 1em;
-          margin-bottom: 1em;
-      }
+     margin-top: 2em;
+  }  
         
   img {
-          max-width: 100%;
+          max-width: 50%;
           border-radius: .5em;
           border: 1px solid #030a4e;
           margin: auto;
@@ -83,7 +66,6 @@ main {
         padding: 10px;
         margin-left: 160px;
         margin-right: 160px;
-        border-radius: 15px;
         text-align: center;
     }
     
