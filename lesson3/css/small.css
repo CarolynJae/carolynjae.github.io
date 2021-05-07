@@ -12,16 +12,15 @@ main {
   }
 
   nav ul li {
-    flex: 1 1 100%;    
+    flex: 1 1 100%;        
   }
 
   nav a {
-    padding:1em;   
+    padding:1em; 
+    color: white;  
+    font-family: Quicksand, Helvetica, sans-serif; 
+    font-size: 20px;
       }
-
-  nav a:link, nav a:visited {
-    color: #ffffff;
-  }
 
   nav a:hover {
     color: #030a4e;
@@ -30,8 +29,8 @@ main {
   
   body {
       margin: auto;
-      background-color: #cadae2;  
-      font-family: Georgia, "Times New Roman", Times, serif;
+      background-color: #cadae2;        
+      font-family: Quicksand, Helvetica, sans-serif; 
       color: #030a4e;
     }
    
@@ -39,7 +38,7 @@ main {
       background-color: #030a4e;
       color: white;
       text-align: center;
-      padding: 7.5px;
+      padding: 1em;
       margin-left: 160px;
       margin-right: 160px;
       margin-top: 40px;  
@@ -51,22 +50,22 @@ main {
     }
   
   h2 {
-    margin-top: -.5em;
+     margin-top: -.5em;
   }
   
   h3 {
     background-color: #030a4e;
     color: white;
     text-align: center;
-    font-size: 22px;
+    font-size: 28px;
     border-radius: 15px;
-    padding: 1em;
-    height: 2em;
+    padding: .5em;
+    height: 1em;
   }
    
   section {
           background-color: white;
-          padding: 1em;
+          padding: .5em;
           margin-top: 1em;
           margin-bottom: 1em;
       }
