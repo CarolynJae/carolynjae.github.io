@@ -27,7 +27,7 @@ main {
     margin: 0 auto;
   }
 
-  nav a {
+  nav li a {
     display: block; 
     padding: 1em; 
     color: white;  
@@ -42,12 +42,11 @@ main {
   }     
       
   h1 {
-        font-size: 42px;    
+    font-size: 42px;    
     }
   
   h2 {
     background-color: #84A9C0;
-    margin-top: 1em;
     padding: .5em;
   }  
 
