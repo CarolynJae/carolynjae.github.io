@@ -3,7 +3,7 @@ body {
   margin: auto;
   background-color: #ffcf56;        
   font-family: Quicksand, Helvetica, sans-serif; 
-  font-size: 18px;
+  font-size: 20px;
   color: #2b4162;
 }
 
@@ -35,8 +35,7 @@ main {
     display: block; 
     padding: 1em; 
     color: white;  
-    font-family: Quicksand, Helvetica, sans-serif; 
-    font-size: 1.2em;    
+    font-family: Quicksand, Helvetica, sans-serif;         
       }
 
   nav a:hover {
@@ -61,13 +60,20 @@ main {
   img {
           max-width: 50%;
           border-radius: .5em;
-          border: 1px solid #030a4e;
+          border: 1px solid #2b4162;
           margin: auto;
         }
 
   #credit {
     font-size: .75em;
     margin-top: -.25em;
+  }
+
+  #typo {
+    background-color: white;
+    padding: 0;
+    margin-left: 3em;
+
   }
         
   footer {
