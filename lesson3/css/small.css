@@ -35,7 +35,8 @@ main {
     display: block; 
     padding: 1em; 
     color: white;  
-    font-family: Quicksand, Helvetica, sans-serif;         
+    font-family: Quicksand, Helvetica, sans-serif;  
+    text-decoration: none;       
       }
 
   nav a:hover {
@@ -49,7 +50,7 @@ main {
   
   h2 {
     background-color: #84A9C0;
-    margin-top: 2em;
+    margin-top: 1em;
     padding: .5em;
   }  
 
