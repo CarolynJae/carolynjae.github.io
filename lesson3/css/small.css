@@ -68,14 +68,7 @@ main {
     font-size: .75em;
     margin-top: -.25em;
   }
-
-  #typo {
-    background-color: white;
-    padding: 0;
-    margin-left: 3em;
-
-  }
-        
+          
   footer {
         background-color: #2b4162;
         color: white;
