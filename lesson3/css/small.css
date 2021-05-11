@@ -30,13 +30,13 @@ main {
   
   body {
       margin: auto;
-      background-color: #cadae2;        
+      background-color: #ffcf56;        
       font-family: Quicksand, Helvetica, sans-serif; 
       color: #030a4e;
     }
    
   header {
-      background-color: #030a4e;
+      background-color: #2b4162;
       color: white;
       text-align: center;
       padding: 1em;
@@ -61,7 +61,7 @@ main {
         }
         
   footer {
-        background-color: #030a4e;
+        background-color: #2b4162;
         color: white;
         padding: 10px;
         margin-left: 160px;
