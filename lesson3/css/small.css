@@ -10,8 +10,7 @@ body {
 main {    
     display: grid;
     grid-template-columns: 1fr;
-    padding: 1em;    
-    margin: auto;
+    padding: 1em;
     background-color: white;
   }
 
@@ -25,10 +24,7 @@ main {
   nav ul {
     list-style-type: none;   
     background-color: #fb6f1e;  
-  }
-
-  nav ul li {
-    flex: 1 1 100%;        
+    margin: 0 auto;
   }
 
   nav a {
@@ -36,7 +32,8 @@ main {
     padding: 1em; 
     color: white;  
     font-family: Quicksand, Helvetica, sans-serif;  
-    text-decoration: none;       
+    text-decoration: none;     
+    text-align: center;  
       }
 
   nav a:hover {
@@ -59,11 +56,11 @@ main {
   }
         
   img {
-          max-width: 50%;
-          border-radius: .5em;
-          border: 1px solid #2b4162;
-          margin: auto;
-        }
+    max-width: 50%;
+    border-radius: .5em;
+    border: 1px solid #2b4162;
+    margin: auto;
+  }
 
   #credit {
     font-size: .75em;
