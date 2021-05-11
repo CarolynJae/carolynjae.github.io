@@ -1,3 +1,10 @@
+body {
+  margin: auto;
+  background-color: #ffcf56;        
+  font-family: Quicksand, Helvetica, sans-serif; 
+  color: #2b4162;
+}
+
 main {
     max-width: 900px;
     display: grid;
@@ -7,8 +14,19 @@ main {
     background-color: white;
   }
 
+  header {
+    background-color: #2b4162;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 40px;       
+  }
+
   nav ul {
-    list-style-type: none;     
+    list-style-type: none;   
+    background-color: #fb6f1e;  
   }
 
   nav ul li {
@@ -24,27 +42,10 @@ main {
       }
 
   nav a:hover {
-    color: #030a4e;
+    color: #2b4162;
     background-color: #ffffff;
-  }
-  
-  body {
-      margin: auto;
-      background-color: #ffcf56;        
-      font-family: Quicksand, Helvetica, sans-serif; 
-      color: #030a4e;
-    }
-   
-  header {
-      background-color: #2b4162;
-      color: white;
-      text-align: center;
-      padding: 1em;
-      margin-left: 160px;
-      margin-right: 160px;
-      margin-top: 40px;       
-    }
-    
+  }     
+      
   h1 {
         font-size: 42px;    
     }
