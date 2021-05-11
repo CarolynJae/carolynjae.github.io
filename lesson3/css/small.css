@@ -2,6 +2,7 @@ body {
   margin: auto;
   background-color: #ffcf56;        
   font-family: Quicksand, Helvetica, sans-serif; 
+  font-size: 16px;
   color: #2b4162;
 }
 
@@ -19,9 +20,7 @@ main {
     color: white;
     text-align: center;
     padding: 1em;
-    margin-left: 160px;
-    margin-right: 160px;
-    margin-top: 40px;       
+    margin: 5em 5em 0 5em;           
   }
 
   nav ul {
@@ -35,7 +34,7 @@ main {
 
   nav a {
     display: block; 
-    padding:1em; 
+    padding: 1em; 
     color: white;  
     font-family: Quicksand, Helvetica, sans-serif; 
     font-size: 20px;
