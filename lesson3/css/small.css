@@ -12,6 +12,8 @@ main {
     grid-template-columns: 1fr;
     padding: 1em;
     background-color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   header {
@@ -25,15 +27,16 @@ main {
     list-style-type: none;   
     background-color: #fb6f1e;  
     margin: 0 auto;
+    flex: 1 1 100%
   }
 
-  nav li a {
-    display: block; 
+  nav a {    
     padding: 1em; 
     color: white;  
     font-family: Quicksand, Helvetica, sans-serif;  
     text-decoration: none;     
     text-align: center;  
+    float: left;
       }
 
   nav a:hover {
