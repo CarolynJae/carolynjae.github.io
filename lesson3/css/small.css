@@ -8,8 +8,7 @@ main {
   }
 
   nav ul {
-    list-style-type: none;
-    display: block;  
+    list-style-type: none;     
   }
 
   nav ul li {
@@ -17,6 +16,7 @@ main {
   }
 
   nav a {
+    display: block; 
     padding:1em; 
     color: white;  
     font-family: Quicksand, Helvetica, sans-serif; 
