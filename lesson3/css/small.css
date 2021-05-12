@@ -27,7 +27,6 @@ main {
     list-style-type: none;   
     background-color: #fb6f1e;  
     margin: 0 auto;
-    flex: 1 1 100%
   }
 
   nav a {    
