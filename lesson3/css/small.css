@@ -23,13 +23,13 @@ nav {
 }
 
 nav ul {  
+  display: block;
+  padding: 1em;
   list-style-type: none;     
   margin: 0 auto;
 }
 
-nav ul li a {    
-  display: block;
-  padding: 1em; 
+nav ul li a {      
   color: white;  
   font-family: Quicksand, Helvetica, sans-serif;  
   text-decoration: none;     
