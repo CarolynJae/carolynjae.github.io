@@ -11,25 +11,30 @@ header {
   background-color: #2b4162;
   color: white;
   display: flex;
-  text-align: center;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
   padding: 1em;    
 }
 
+nav {
+  background-color: #fb6f1e;
+  text-align: center;
+}
+
 nav ul {  
-  display: block
-  list-style-type: none;   
-  background-color: #fb6f1e;  
+  list-style-type: none;     
   margin: 0 auto;
 }
 
-nav a {    
+nav ul li a {    
+  display: block;
   padding: 1em; 
   color: white;  
   font-family: Quicksand, Helvetica, sans-serif;  
   text-decoration: none;     
-  text-align: center;  
-  float: left;
-    }
+  text-align: center;
+}
 
 nav a:hover {
   color: #2b4162;
