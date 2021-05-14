@@ -1,3 +1,8 @@
+function toggleMenu(){
+    document.getElementsByClassName("navigation") [0].classList.toggle
+}
+
+
 //const hambutton = document.querySelector(".ham");
 //const mainnav = document.querySelector(".navigation");
 
