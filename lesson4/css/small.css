@@ -27,7 +27,7 @@ nav button {
   background-color: transparent;  
   border: none;
   font-size: 1.6rem;
-  color: #555;
+  color: white;
 }
 
 nav ul {
@@ -45,13 +45,18 @@ nav ul li a {
       }
 
 nav ul li.active a {
-    background-color:rgba(0, 0, 0, 0.2)
+    background-color:rgba(0, 0, 0, 0.2);
+    color: white;    
   }
 
  nav ul li a:hover {
     color: #2b4162;
     background-color: #ffffff;
   }     
+
+  nav ul.hide {
+    display: none;
+  }
 
   body {
     max-width: 900px;
