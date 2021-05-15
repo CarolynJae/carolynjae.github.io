@@ -1,4 +1,9 @@
 @media only screen and (min-width: 35em) {
+
+    .navigation li.first-child {
+        display: none;
+    }
+
     nav ul li a {
         padding: .6rem 1rem;
     }
