@@ -1,4 +1,3 @@
 function toggleMenu() {
-    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+    document.getElementsId("primaryNav").classList.toggle("hide");
     }
-    window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
