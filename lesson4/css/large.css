@@ -6,6 +6,7 @@
         
     nav ul {
         display: flex;
+        justify-content: space-between;
     }
 
     nav ul.hide {
