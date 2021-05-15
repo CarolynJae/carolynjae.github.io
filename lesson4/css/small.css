@@ -20,7 +20,7 @@ nav {
   background-color: #2b4162;
 }
 
-nav button {
+button {
   margin: .2rem 2%;
   display: block;
   float: right;
