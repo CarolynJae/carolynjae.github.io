@@ -45,7 +45,7 @@ nav ul li a {
       }
 
 nav ul li.active a {
-    background-color:rgba(0, 0, 0, 0.2);
+    background-color:#fb6f1e;
     color: white;    
   }
 
@@ -73,12 +73,19 @@ nav ul li.active a {
       margin-bottom: 1em;
     }
 
-    footer {
+  footer {
       background-color: #2b4162;
       color: white;
-      padding: 10px;
-      text-align: center;
+      padding: 10px;      
   }
+
+  #byui {
+    color: white;
+  }
+
+  #contact (
+    text-align: left;
+  )
 
     .clearfix:after {
       content: "";
