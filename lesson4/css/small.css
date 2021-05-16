@@ -17,8 +17,7 @@ header img {
 nav {
   margin: 0 auto;
   max-width: 100%; 
-  background-color: #2b4162;
-   
+  background-color: #2b4162;   
 }
 
 button {
@@ -89,5 +88,6 @@ nav ul li.active a {
       content: "";
       display: table;
       clear: both;
+      background-color: #2b4162;
     }
  
