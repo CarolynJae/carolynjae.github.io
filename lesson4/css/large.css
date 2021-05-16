@@ -6,7 +6,7 @@
         
     nav ul {
         display: flex;
-    }
+            }
 
     nav ul.hide {
         display: block;
