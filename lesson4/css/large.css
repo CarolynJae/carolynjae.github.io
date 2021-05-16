@@ -1,4 +1,4 @@
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 64em) {
 
     button {
         display: none;
@@ -6,7 +6,6 @@
         
     nav ul {
         display: flex;
-        justify-content: space-between;
     }
 
     nav ul.hide {
