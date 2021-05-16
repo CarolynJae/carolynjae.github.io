@@ -76,18 +76,15 @@ nav ul li.active a {
   footer {
       background-color: #2b4162;
       color: white;
-      padding: 10px;      
+      padding: 10px;  
+      text-align: center;    
   }
 
   #byui {
     color: white;
   }
 
-  #contact (
-    text-align: left;
-  )
-
-    .clearfix:after {
+     .clearfix:after {
       content: "";
       display: table;
       clear: both;
