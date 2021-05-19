@@ -2,20 +2,21 @@ const input = document.querySelector('input');
 const button = document.querySelector('button');
 const list = document.querySelector('ul');
 
-button.addEventListener('click', function() {
-    let myItem = input.value;
+button.onclick = function() {
+    let myChapter = input.value;
     input.value = '';
 
-    const listItem = document.createElement('li');
+    const listChapter = document.createElement('li');
     const listBtn = document.createElement('button');
+    const listText = document.createElement('span');
 
-    listText.textContent = myItem;
+    listText.textContent = myChapter;
     listBtn.textContent = 'X';
-    listItem.appendChild(listBtn);
-    list.appendChild(listItem);
+    listChapter.appendChild(listBtn);
+    list.appendChild(listChapter);
 
     listBtn.onclick = function(e) {
-        list.removeChild(listItem);
+        list.removeChild(listChapter);
     }
 
     input.focus();
