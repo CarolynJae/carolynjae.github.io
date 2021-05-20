@@ -18,8 +18,8 @@ button.addEventListener('click', function() {
 
     listBtn.addEventListener('click', function() {
         list.removeChild(listChapter);
-    }
+    })
 
     input.focus();
 
-}
+})
