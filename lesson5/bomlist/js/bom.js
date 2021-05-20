@@ -12,7 +12,7 @@ button.addEventListener('click', function() {
 
     listChapter.appendChild(listText);
     listText.textContent = myChapter;
-    listBtn.textContent = 'X';
+    listBtn.textContent = '❌';
     listChapter.appendChild(listBtn);
     list.appendChild(listChapter);
 
