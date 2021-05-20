@@ -10,7 +10,7 @@ header {
 }
 
 header img {
-    max-width: 80px;
+    max-width: 100%;
     float: left;
   }
 
