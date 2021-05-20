@@ -10,13 +10,13 @@ header {
 }
 
 header img {
-    max-width: 100%;
+    max-width: 80px;
     float: left;
   }
 
 nav {
-  margin: 0 auto;
-  max-width: 100%; 
+ /* margin: 0 auto; */
+  width: 100%; 
   background-color: #2b4162;   
 }
 
@@ -72,6 +72,21 @@ nav ul li.active a {
       margin-top: 1em;
       margin-bottom: 1em;
     }
+
+    main img {
+      width: 100%;
+    }
+
+  #summary {
+    background-color: #89A4C0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-style: solid;
+  }
+
+  summary h3 {
+    text-align: center;
+  }
 
   footer {
       background-color: #2b4162;
