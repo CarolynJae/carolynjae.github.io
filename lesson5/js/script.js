@@ -1,11 +1,15 @@
+/*copyright date*/
+
 let date = new Date();
 document.getElementById("currentyear").innerHTML= date.getFullYear();
+
+/*"hamburger" menu button*/
 
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
     }
 
-/*Javascript for current date*/
+/*current date*/
 
     var today = new Date();
 
@@ -20,6 +24,7 @@ function toggleMenu() {
       "Friday",
       "Saturday",
     ];
+
     var dayName = days[today.getDay()];
 
     var months = [
@@ -36,7 +41,9 @@ function toggleMenu() {
       "November",
       "December",
     ];
-    var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+
+    var mm = String(today.getMonth() + 1).padStart(2, "0");
+
     var monthName = months[today.getMonth()];
 
     var yyyy = today.getFullYear();
@@ -44,6 +51,7 @@ function toggleMenu() {
     today = dayName + ", " + dd + " " + monthName + " " + yyyy;
 
     const currentDate = new Date();
+
     document.querySelector("#year").textContent = today;
     
    
