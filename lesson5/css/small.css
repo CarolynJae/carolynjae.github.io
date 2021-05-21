@@ -82,10 +82,12 @@ nav ul li.active a {
     }
 
   #summary {
-    background-color: #89A4C0;
+   /* background-color: #89A4C0; */
     padding-left: 1rem;
-    padding-right: 1rem;
-    border-style: solid;
+    padding-right: 1rem;    
+    background: radial-gradient(#eee, #89a4c0);
+    border: 1px solid #000;  
+    opacity: .8;
   }
 
   summary h3 {
