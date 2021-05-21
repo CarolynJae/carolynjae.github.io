@@ -77,6 +77,10 @@ nav ul li.active a {
       width: 100%;
     }
 
+    .herodiv {
+      position: relative;
+    }
+
   #summary {
     background-color: #89A4C0;
     padding-left: 1rem;

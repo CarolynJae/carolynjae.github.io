@@ -1,8 +1,10 @@
 @media only screen and (min-width: 36em) {    
 
     #summary {
+        position: absolute;
         width: 200px;
         height: 160px;
+    
     }
 
 }
