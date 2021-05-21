@@ -5,15 +5,8 @@
         
     nav ul {
         display: flex;
+        justify-content: center;
     }
-
-    nav ul.hide {
-        display: block;
-    }
-
-   nav ul li {
-       float: left;
-   }
 
     nav ul li a {
         border: none;
