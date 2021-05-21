@@ -53,5 +53,14 @@ function toggleMenu() {
     const currentDate = new Date();
 
     document.querySelector("#year").textContent = today;
-    
-   
+
+    /*Top Banner - display only on Friday*/
+
+    let d = new Date();
+
+    console.log(d.getDay());
+
+    if (d.getDay() != 5) {
+     document.querySelector('.topbanner').style.display = "none";
+} 
+  
