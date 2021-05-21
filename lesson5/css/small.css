@@ -44,6 +44,7 @@ button {
 }
 
 nav ul {
+    display: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
