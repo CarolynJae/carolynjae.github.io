@@ -8,6 +8,9 @@
         justify-content: space-around;
     }
 
+    nav ul.hide {
+        display: flex;
+    }  
 
     nav ul li a {        
         border: none;
