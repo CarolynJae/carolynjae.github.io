@@ -61,6 +61,6 @@ function toggleMenu() {
     console.log(d.getDay());
 
     if (d.getDay() != 5) {
-     document.querySelector('.topbanner').style.display = 'none';
+     document.querySelector('#topbanner').style.display = 'none';
 } 
   
