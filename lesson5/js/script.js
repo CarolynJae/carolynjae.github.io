@@ -1,58 +1,58 @@
 /*copyright date*/
 
 let date = new Date();
-document.getElementById("currentyear").innerHTML= date.getFullYear();
+document.getElementById('currentyear').innerHTML= date.getFullYear();
 
 /*"hamburger" menu button*/
 
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("hide");
+    document.getElementById('primaryNav').classList.toggle('hide');
     }
 
 /*current date*/
 
     var today = new Date();
 
-    var dd = String(today.getDate()).padStart(2, "0");
+    var dd = String(today.getDate()).padStart(2, '0');
 
     var days = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
+      'Sunday',
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday',
     ];
 
     var dayName = days[today.getDay()];
 
     var months = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
     ];
 
-    var mm = String(today.getMonth() + 1).padStart(2, "0");
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
 
     var monthName = months[today.getMonth()];
 
     var yyyy = today.getFullYear();
 
-    today = dayName + ", " + dd + " " + monthName + " " + yyyy;
+    today = dayName + ', ' + dd + '' + monthName + '' + yyyy;
 
     const currentDate = new Date();
 
-    document.querySelector("#year").textContent = today;
+    document.querySelector('#year').textContent = today;
 
     /*Top Banner - display only on Friday*/
 
@@ -61,6 +61,6 @@ function toggleMenu() {
     console.log(d.getDay());
 
     if (d.getDay() != 5) {
-     document.querySelector('.topbanner').style.display = "none";
+     document.querySelector('.topbanner').style.display = 'none';
 } 
   
