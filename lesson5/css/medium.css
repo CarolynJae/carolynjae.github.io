@@ -14,7 +14,6 @@
 
     nav ul li a {        
         border: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
         padding: .6rem 1rem;
     }
 
@@ -36,7 +35,6 @@
 
     table {
         width: 75%;
-        align-items: center;
         border-collapse: collapse;
         margin: 0 auto;        
     }
@@ -48,6 +46,8 @@
 
     td {
         background-color: white;
+        line-height: 2em;
+        text-align: center;
     }
 
     table, th, td {
