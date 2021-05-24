@@ -23,7 +23,11 @@ header img {
     float: left;
   }
 
-.headings h3 {
+  h3 {
+    text-align: center;
+  }
+
+.headings h4 {
   margin-top: -1.5rem;
   }
 
@@ -105,11 +109,23 @@ nav ul li.active a {
     text-align: center;
   }
 
+  #forecast {
+    display: none;
+  }
+
+  .article img {
+    width: 50%;
+  }
+
   footer {
       background-color: #2b4162;
       color: white;
       padding: 10px;  
       text-align: center;    
+  }
+
+  #map {
+    display: none;
   }
 
   #byui {
