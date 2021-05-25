@@ -109,6 +109,10 @@ nav ul li.active a {
     text-align: center;
   }
 
+  #summary h3 {
+    border-bottom: 2px solid;
+  }
+
   #forecast {
     display: none;
   }
