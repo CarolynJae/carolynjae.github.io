@@ -40,11 +40,10 @@ nav {
 button {
   margin: .2rem 2%;
   display: block;
-  float: right;
   background-color: transparent;  
   border: none;
   font-size: 1.6rem;
-  color: #2b4162;
+  color: white;
 }
 
 nav ul {

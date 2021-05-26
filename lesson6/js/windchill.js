@@ -10,4 +10,3 @@ if (currentTemp <= 50) and (windspeed < 3) {
         return calculation;
     } 
 }
-
