@@ -1,11 +1,11 @@
-document.querySelector(".currentTemp")
-document.querySelector(".windspeed")
+let t = document.querySelector("#temperature")
+let s = document.querySelector("#windspeed")
 
-if (currentTemp <= 50) and (windspeed < 3) {
-    function windChill(tempF, speed) {
+if (t <= 50) && (s > 3) {
+    function windChill(t, s) {
             
-        let f = 35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speed, 0.16)) 
-                    + (0.4275 * tempF * Math.pow(speed, 0.16));
+        let f = 35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16)) 
+                    + (0.4275 * t * Math.pow(s, 0.16));
         var calculation = Math.round(f)
         return calculation;
     } 
