@@ -1,0 +1,20 @@
+body {
+    margin: auto;
+    background-color: #89A4C0;     
+    text-align: center;
+}
+
+picture {
+    display: block;    
+}
+
+/* Following code from "Progressive Loading" example on Mozilla.org */
+
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+ img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
