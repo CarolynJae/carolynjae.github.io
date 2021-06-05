@@ -13,6 +13,30 @@
   </head>
 
   <body>
+    <header>
+        <picture id="logo">
+          <img src="images/weatherducknew.png" alt="WeatherDuck Logo"> 
+        </picture>      
+  
+        <section class="headings">
+          <h1>The Weather Duck</h1> 
+          <h4>"Im still trying to think of a good tagline..."</h4>
+        </section>                
+    </header>
+
+    <nav class="clearfix">    
+        <button onclick="toggleMenu()">&#9776;</button>        
+        <ul id="primaryNav" class="hide">   
+          <li><a href="#">Home</a></li>             
+          <li class="active"><a href="#">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li> 
+          <li><a href="#">Storm Center</a></li> 
+          <li><a href="#">Gallery</a></li>              
+      </ul>   
+    </nav>  
+
+    <main>
       <h1>Weather Gallery</h1>
         <picture><img src="images/placeholder.png" data-src="images/weather1.jpg" alt="umbrellas"></picture>
         <picture><img src="images/placeholder.png" data-src="images/weather2.jpg" alt="umbrellas"></picture>
@@ -22,9 +46,23 @@
         <picture><img src="images/placeholder.png" data-src="images/weather6.jpg" alt="umbrellas"></picture>
         <picture><img src="images/placeholder.png" data-src="images/weather7.jpg" alt="umbrellas"></picture>
         <picture><img src="images/placeholder.png" data-src="images/weather8.jpg" alt="umbrellas"></picture>
-        <picture><img src="images/placeholder.png" data-src="images/weather9.jpg" alt="umbrellas"></picture>
+        <picture><img src="images/placeholder.png" data-src="images/weather9.jpg" alt="umbrellas"></picture>               
+    </main>
+
+    <footer>
+        <div id="contact">
+        Contact Information
+        <p>&#9743; 208-555-0123</p>
+        <p>&#9993; info@theweatherduck.com</p>
+        </div>        
         
-        <script src="js/gallery.js"></script>
+        <p>&copy; <span id="currentyear"></span>| Carolyn Sundrud | Fort Worth - Texas |
+            <a id="byui" href="https://www.byui.edu/online">BYUI Online Learning</a>
+          </p>
+          <p>Current Date: <span id="year"></span></p>        
+      </footer>
+
+    <script src="js/gallery.js"></script>
 
   </body>
 </html>
