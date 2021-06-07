@@ -68,16 +68,16 @@ nav ul li.active a {
     text-shadow: 1px 1px 0 #000;     
   }
 
- nav ul li a:hover {
+nav ul li a:hover {
     color: #2b4162;
     background-color: #ffffff;
   }     
 
-  nav ul.hide {
+nav ul.hide {
     display: none;
   }
   
-   body {
+body {
     max-width: 900px;
     margin: auto;            
     font-family: Quicksand, Helvetica, sans-serif; 
@@ -85,22 +85,22 @@ nav ul li.active a {
     color: #2b4162;
   }
   
-  main {    
+main {    
       padding: 1em;
       background-color: #ffcf56;
       margin-top: 1em;
       margin-bottom: 1em;
     }
 
-    main img {
+main img {
       width: 100%;
     }
 
-    .herodiv {
+.herodiv {
       position: relative;
     }
 
-  #summary {
+#summary {
     background-color: #89A4C0; 
     border-radius: 10px;
     padding-left: 1rem;
@@ -111,34 +111,39 @@ nav ul li.active a {
     text-align: center;
   }
 
-  #summary h3 {
+#summary h3 {
     border-bottom: 2px solid;
   }
 
-  #forecast {
+#forecast {
     display: none;
   }
 
-  .article img {
+.article img {
     width: 50%;
   }
 
-  footer {
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+footer {
       background-color: #2b4162;
       color: white;
       padding: 10px;  
       text-align: center;    
   }
 
-  #map {
+#map {
     display: none;
   }
 
-  #byui {
+#byui {
     color: white;
   }
 
- .clearfix:after {
+.clearfix:after {
       content: "";
       display: table;
       clear: both;
