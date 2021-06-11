@@ -41,15 +41,15 @@
 
       <form method="get" action="thanks.html">
         <fieldset>
-            <legend>User Information</legend>
-            <label class="top">Full Name* <input type="text" name="fullname" pattern="" required></label>
+            <legend>TELL US ABOUT YOU</legend>
+            <label class="top">Full Name* <input type="text" name="fullname" pattern="[a-zA-Z ]{5,}" required></label>
             <label class="top">Email <input type="email" name="email" placeholder="name@gmail.com" required></label>            
             <label class="top">Phone* <input type="tel" name="phone" required></label>
-            <label class="top">Zip Code* <input type="number" name="zipcode"></label>                    
+            <label class="top">Zip Code* <input type="number" name="zipcode" required></label>                    
         </fieldset>
 
         <fieldset>
-          <legend>Storm Information</legend>
+          <legend>TELL US ABOUT THE STORM</legend>
           <label class="top">Date of Storm <input type="date" name="stormdate"></label>
           <label class="top">Type of Storm</label>
             <input list="storms" id="stormtype" name="stormtype"/>
@@ -63,8 +63,8 @@
               <option value="Tornado"></option>
             </datalist>
 
-            <label class="top">Storm Severity Rating <span id="rating">5</span>
-              <input type="range" id="severity" list="tickmarks" min="1" max="10" 
+            <label class="top">Storm Severity Rating: <span id="ratingvalue">5</span>
+              <input type="range" id="rating" list="tickmarks" min="1" max="10" 
               oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
             </label>
                 <datalist id="tickmarks">
@@ -87,6 +87,12 @@
                   <option value="Springs">Soda Springs</option>
                   <option value="Haven">Fish Haven</option>                  
               </select>
+
+              <div>Are You In Danger?</div>
+              <label class="sbs"><input type="radio" name="danger" value="yes"> Yes!</label>
+              <label class="sbs"><input type="radio" name="danger" value="no"> Nah</label>
+              <label class="sbs"><input type="radio" name="danger" value="maybe"> Possibly</label>
+
         </fieldset>
 
 

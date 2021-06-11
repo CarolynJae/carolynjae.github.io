@@ -87,7 +87,8 @@ body {
   
 main {    
       padding: 1em;
-      background-color: #ffcf56;
+      background-color: white;
+      border: 20px solid #ffcf56;
       margin-top: 1em;
       margin-bottom: 1em;
     }
@@ -138,14 +139,13 @@ main img {
 form fieldset {
   margin: 2rem 0;
   background-color: white;
-  border: 1px solid #445ba9;
+  border: 1px solid #2b4162;
   border-radius: 10px;
   padding: .5rem 2%;
 }
 
 form legend {
-  color: #445ba9;
-  background-color: white;
+  color: #2b4162;
   margin: 0 1rem;
   padding: 0 .5rem;
 }
@@ -153,8 +153,8 @@ form legend {
 form label.top, form div {
   display: block;
   padding-top: 1rem;
-  color: #9c2c13;
-  font-size: .5rem;
+  color: #2b4162;
+  font-size: 1rem;
 }
 
 form label.top input, form label.top select {
@@ -187,13 +187,8 @@ form input.submitBtn {
   max-width: 20rem;
 }
 
-form label.top input:required {
-  border-left: 6px solid red;
-}
 
-form label.top input:required:valid {
-  border-left: 6px solid green;
-}
+/*------- FOOTER ------*/
 
 footer {
       background-color: #2b4162;

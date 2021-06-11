@@ -63,4 +63,8 @@ function toggleMenu() {
     if (d.getDay() != 5) {
      document.querySelector('#topbanner').style.display = 'none';
 } 
+
+function adjustRating(rating) {
+  document.getElementById("ratingvalue").innerHTML = rating;
+}
   
