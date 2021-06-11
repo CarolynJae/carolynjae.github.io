@@ -1,0 +1,157 @@
+#topbanner {
+  background-color: #f3a712;
+  color: black;
+  border: solid 1px;  
+  text-align: center;
+  font-size: 1.2rem;  
+  padding: .5em;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    color: #2b4162;
+    text-align: center;
+    padding: 5px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    max-width: 80px;
+    float: left;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+.headings h4 {
+  margin-top: -1.5rem;
+  }
+
+nav {
+  margin: 0 auto; 
+  width: 100%; 
+  background-color: #2b4162;   
+}
+
+button {
+  margin: .2rem 2%;
+  display: block;
+  background-color: transparent;  
+  border: none;
+  font-size: 1.6rem;
+  color: white;
+}
+
+nav ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+nav ul li a {    
+    display: block;
+    padding: .8rem 2%; 
+    color: white;      
+    text-decoration: none;  
+    text-shadow: 1px 1px 0 #000;   
+    border-top:1px solid rgba(0, 0, 0, 0.3);
+      }
+
+nav ul li.active a {
+    background-color:#fb6f1e;
+    color: white;
+    text-shadow: 1px 1px 0 #000;     
+  }
+
+nav ul li a:hover {
+    color: #2b4162;
+    background-color: #ffffff;
+  }     
+
+nav ul.hide {
+    display: none;
+  }
+  
+body {
+    max-width: 900px;
+    margin: auto;            
+    font-family: Quicksand, Helvetica, sans-serif; 
+    font-size: 20px;
+    color: #2b4162;
+  }
+  
+main {    
+      padding: 1em;
+      background-color: #ffcf56;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+main img {
+      width: 100%;
+    }
+
+.herodiv {
+      position: relative;
+    }
+
+#summary {
+    background-color: #89A4C0; 
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;    
+    background: radial-gradient(#eee, #89a4c0);
+    border: 1px solid #000;  
+    opacity: .9;
+    text-align: center;
+  }
+
+#summary h3 {
+    border-bottom: 2px solid;
+  }
+
+#forecast {
+    display: none;
+  }
+
+.article img {
+    width: 50%;
+  }
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.galleryimg {
+  background-color: white;
+  text-align: center;
+}
+
+footer {
+      background-color: #2b4162;
+      color: white;
+      padding: 10px;  
+      text-align: center;    
+  }
+
+#map {
+    display: none;
+  }
+
+#byui {
+    color: white;
+  }
+
+.clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+      background-color: #2b4162;
+    }
+ 
