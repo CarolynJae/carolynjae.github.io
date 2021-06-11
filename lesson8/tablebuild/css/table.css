@@ -1,12 +1,15 @@
+body {
+    font-family: "Ubuntu", sans-serif;   
+    text-align: center; 
+}
+    
 table {    
     box-shadow: 5px 5px 10px #628ca6;
     width: 30%;
     margin: auto;
 }
 
-table, th, td {
-    font-family: Ubuntu, sans-serif;   
-    text-align: center; 
+table, th, td {    
     border: 1px solid lightgrey;
     border-collapse: collapse;
 }
