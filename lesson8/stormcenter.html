@@ -43,15 +43,50 @@
         <fieldset>
             <legend>User Information</legend>
             <label class="top">Full Name* <input type="text" name="fullname" pattern="" required></label>
-            <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>            
-            <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234"></label>
-            <label class="top">Zip Code* <input type="number" name="zipcode" placeholder="12345"></label>                    
+            <label class="top">Email <input type="email" name="email" placeholder="name@gmail.com" required></label>            
+            <label class="top">Phone* <input type="tel" name="phone" required></label>
+            <label class="top">Zip Code* <input type="number" name="zipcode"></label>                    
         </fieldset>
 
         <fieldset>
           <legend>Storm Information</legend>
           <label class="top">Date of Storm <input type="date" name="stormdate"></label>
+          <label class="top">Type of Storm</label>
+            <input list="storms" id="stormtype" name="stormtype"/>
+            <datalist id="storms">
+              <option value="Flash Flood"></option>
+              <option value="Hail"></option>
+              <option value="Hurricane"></option>
+              <option value="Lightning Strike"></option>
+              <option value="Strong Winds"></option>
+              <option value="Thunderstorm"></option>
+              <option value="Tornado"></option>
+            </datalist>
 
+            <label class="top">Storm Severity Rating <span id="rating">5</span>
+              <input type="range" id="severity" list="tickmarks" min="1" max="10" 
+              oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            </label>
+                <datalist id="tickmarks">
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                  <option value="5"></option>
+                  <option value="6"></option>
+                  <option value="7"></option>
+                  <option value="8"></option>
+                  <option value="9"></option>
+                  <option value="10"></option>
+                </datalist>
+
+            <label class="top">Storm Region
+              <select name="region">
+                  <option value="">Please Select &#9662</option>
+                  <option value="Preston">Preston</option>
+                  <option value="Springs">Soda Springs</option>
+                  <option value="Haven">Fish Haven</option>                  
+              </select>
         </fieldset>
 
 
