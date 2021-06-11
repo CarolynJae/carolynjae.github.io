@@ -28,7 +28,7 @@
         <button onclick="toggleMenu()">&#9776;</button>        
         <ul id="primaryNav" class="hide">   
           <li><a href="#">Home</a></li>             
-          <li><a href="index.html">Preston</a></li>
+          <li><a href="../lesson6/preston-6.html">Preston</a></li>
           <li><a href="#">Soda Springs</a></li>
           <li><a href="#">Fish Haven</a></li> 
           <li class="active"><a href="#">Storm Center</a></li> 
@@ -37,16 +37,21 @@
     </nav>  
 
     <main>
-      <h1>Storm Center</h1>
+      <h1>Storm Report</h1>
 
       <form method="get" action="thanks.html">
         <fieldset>
-            <legend>Storm Report</legend>
+            <legend>User Information</legend>
             <label class="top">Full Name* <input type="text" name="fullname" pattern="" required></label>
             <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>            
             <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234"></label>
-            <label class="top">Zip Code* <input type="number" name="zipcode" placeholder="12345"></label>
-            <label class="top">Date of Storm <input type="date" name="stormdate"></label>        
+            <label class="top">Zip Code* <input type="number" name="zipcode" placeholder="12345"></label>                    
+        </fieldset>
+
+        <fieldset>
+          <legend>Storm Information</legend>
+          <label class="top">Date of Storm <input type="date" name="stormdate"></label>
+
         </fieldset>
 
 
