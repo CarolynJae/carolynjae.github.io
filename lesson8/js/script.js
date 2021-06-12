@@ -64,6 +64,8 @@ function toggleMenu() {
      document.querySelector('#topbanner').style.display = 'none';
 } 
 
+/*Form*/
+
 function adjustRating(rating) {
   document.getElementById("ratingvalue").innerHTML = rating;
 }
