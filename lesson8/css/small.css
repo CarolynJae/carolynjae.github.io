@@ -170,16 +170,16 @@ form label.top input, form label.top select {
   background-color: rgba(38, 73, 94, 0.1);
 }
 
-form label.sbs {
-  display: block;
+form .sbs {
+  display: inline-block;
   padding: .75rem 0;
   color: #555;
 }
 
 form input.submitBtn {
   border: none;
-  background-color: #84a9c0;
-  color: black;
+  background-color: #ffcf56;
+  border: 6px solid #fb6f1e;
   font-size: 1.5rem;
   border-radius: 1rem;
   padding: .75rem 1.5rem;
