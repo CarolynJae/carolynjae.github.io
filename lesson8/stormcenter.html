@@ -63,7 +63,13 @@
               <option value="Tornado"></option>
             </datalist>
 
-            <label class="top">Storm Severity Rating: <span id="ratingvalue">5</span>
+            <br>
+            <br>
+
+            <label>Storm Severity Rating: <span id="ratingvalue">5</span>
+
+            <br>
+
               <input type="range" id="rating" list="tickmarks" min="1" max="10" 
               oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
             </label>
@@ -82,25 +88,27 @@
 
             <label class="top">Storm Region
               <select name="region">
-                  <option value="">Select Region&#9662</option>
+                  <option value="">Select Region</option>
                   <option value="Preston">Preston</option>
                   <option value="Springs">Soda Springs</option>
                   <option value="Haven">Fish Haven</option>                  
               </select>
+              </label>
 
-              <div>Are You In Danger?</div>
-              <input type="radio" id="yes" name="danger" value="yes">
+              <p>Are You In Danger?</p>
+              <input class="sbs" type="radio" id="yes" name="danger" value="yes">
               <label for="yes">Yes, I'm scared!</label><br>
-              <input type="radio" id="no" name="danger" value="no"> 
-              <label for="no">Nah, I'm okay.</label>
-              <input type="radio" id="maybe" name="danger" value="maybe"> 
-              <label for ="maybe">Quite possibly</label>
+              <input class="sbs" type="radio" id="maybe" name="danger" value="maybe"> 
+              <label for ="maybe">Quite possibly</label><br>
+              <input class="sbs" type="radio" id="no" name="danger" value="no"> 
+              <label for="no">Nah, I'm okay.</label><br>
+              
 
         </fieldset>
 
         <fieldset>
           <legend>ANY ADDITIONAL INFORMATION</legend>
-          <input type="text">
+          <textarea name="moreinfo" rows="8" cols="35"></textarea>
                              
       </fieldset>
 
