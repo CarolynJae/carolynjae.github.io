@@ -4,5 +4,11 @@
     }
 
     .galleryimg:hover {box-shadow: 0 0 50px #333;}
+
+    form .sbs {
+        padding: .4rem 0;
+    }
+
+
 }
  
