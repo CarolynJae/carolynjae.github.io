@@ -82,19 +82,31 @@
 
             <label class="top">Storm Region
               <select name="region">
-                  <option value="">Please Select &#9662</option>
+                  <option value="">Select Region&#9662</option>
                   <option value="Preston">Preston</option>
                   <option value="Springs">Soda Springs</option>
                   <option value="Haven">Fish Haven</option>                  
               </select>
 
               <div>Are You In Danger?</div>
-              <label class="sbs"><input type="radio" name="danger" value="yes"> Yes!</label>
-              <label class="sbs"><input type="radio" name="danger" value="no"> Nah</label>
-              <label class="sbs"><input type="radio" name="danger" value="maybe"> Possibly</label>
+              <input type="radio" id="yes" name="danger" value="yes">
+              <label for="yes">Yes, I'm scared!</label><br>
+              <input type="radio" id="no" name="danger" value="no"> 
+              <label for="no">Nah, I'm okay.</label>
+              <input type="radio" id="maybe" name="danger" value="maybe"> 
+              <label for ="maybe">Quite possibly</label>
 
         </fieldset>
 
+        <fieldset>
+          <legend>ANY ADDITIONAL INFORMATION</legend>
+          <input type="text">
+                             
+      </fieldset>
+
+      <input type="submit" value="Send Storm Report" class="submitBtn">
+
+      </form>
 
     </main>
 
