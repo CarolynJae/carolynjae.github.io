@@ -9,6 +9,7 @@ fetch (requestURL)
 
     .then (function (jsonObject) {
         console.table(jsonObject);
+        for (let i = 0; i < prophets.length; i++ ) {
     })
 
-    
+const prophets = jsonObject['prophets'];
