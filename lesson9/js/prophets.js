@@ -22,7 +22,8 @@ fetch(requestURL)
       prophetName.textContent = thisProphet.name + " " + thisProphet.lastname;
       birthDate.textContent = "Date of Birth:" + " " + thisProphet.birthdate;
       birthPlace.textContent = "Place of Birth:" + " " + thisProphet.birthplace;
-      prophetImage.setAttribute('src', thisProphet.imageurl);
+      prophetImage.setAttribute("src", thisProphet.imageurl);
+      prophetImage.setAttribute("alt", thisProphet.name + " " + thisProphet.lastname + " - " + thisProphet.order);
 
       card.appendChild(prophetName);
       card.appendChild(birthDate);
