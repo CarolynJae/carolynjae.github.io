@@ -28,14 +28,14 @@ p {
 
   .cards section {
     background-color: lightslategrey;
-    margin: 1rem;
+    margin: .2rem;
     padding: .5rem;
-    box-shadow: 1px 1px 3px 3px #555;
-
+    border: 2px solid darkslategray;
   }
 
   .cards section img {
     width: 80%;
+    box-shadow: 1px 1px 3px 3px #555;
   }
 
   footer {
