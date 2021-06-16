@@ -1,0 +1,23 @@
+body {  
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+
+  @media only screen and (min-width: 38em) {      
+    .cards {        
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+  }
+
+  @media only screen and (min-width: 64em) {
+    .cards {        
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+}
