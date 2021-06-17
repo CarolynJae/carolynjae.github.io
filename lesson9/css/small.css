@@ -140,6 +140,10 @@ main img {
   border: 1px double #a3a3a3;
 }
 
+#smallframe {
+  width: 50%;
+}
+
 /*------- FORM --------*/
 
 form fieldset {
