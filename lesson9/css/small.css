@@ -84,7 +84,7 @@ body {
     font-size: 20px;
     color: #2b4162;
   }
-  
+
 main {    
       padding: 1em;
       background-color: white;
@@ -196,6 +196,24 @@ form input.submitBtn {
   margin: 0 0 2rem 2%;
   width: 96%;
   max-width: 20rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;   
+  align-content: center;
+}
+
+.cards section { 
+  background-color: #84a9c0;
+  margin: .2rem;
+  padding: .5rem;  
+  text-align: center;
+}
+
+.cards section img {
+  width: 80%;
+  max-width: 100%;  
 }
 
 
