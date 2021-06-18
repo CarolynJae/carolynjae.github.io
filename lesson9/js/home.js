@@ -25,9 +25,7 @@ fetch(requestURL)
         townMotto.textContent = towns[i].motto;
         yearFounded.textContent = "Founded in" + " " + towns[i].yearFounded;
         townPopulation.textContent = "Population:" + " " + towns[i].currentPopulation;
-        townRainfall.textContent = "Average Yearly Rainfall:" + " " + towns[i].averageRainfall;
-
-        
+        townRainfall.textContent = "Average Yearly Rainfall:" + " " + towns[i].averageRainfall; 
 
         card.appendChild(townName);
         card.appendChild(townMotto);

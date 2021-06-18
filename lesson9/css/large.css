@@ -9,6 +9,10 @@
         padding: .4rem 0;
     }
 
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 
 }
  
