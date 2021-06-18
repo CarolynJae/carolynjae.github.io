@@ -198,20 +198,20 @@ form input.submitBtn {
   max-width: 20rem;
 }
 
-.cards {
+.towninfo {
   display: grid;
   grid-template-columns: 1fr;   
   align-content: center;
 }
 
-.cards section { 
+.towninfo section { 
   background-color: #84a9c0;
   margin: .2rem;
   padding: .5rem;  
   text-align: center;
 }
 
-.cards section img {
+.towninfo section img {
   width: 80%;
   max-width: 100%;  
 }
