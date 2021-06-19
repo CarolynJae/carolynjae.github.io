@@ -54,7 +54,7 @@ function toggleMenu() {
 
     document.querySelector('#year').textContent = today;
 
-    /*Top Banner - display only on Friday*/
+  /*Top Banner - display only on Friday*/
 
     let d = new Date();
 
