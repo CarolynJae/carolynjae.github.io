@@ -15,7 +15,7 @@ fetch(requestURL)
          
         let card = document.createElement("section");
         let townName = document.createElement("h2");  
-        let townMotto = document.createElement("h3");
+        let townMotto = document.createElement("h4");
         let yearFounded = document.createElement("p");
         let townPopulation = document.createElement("p");
         let townRainfall = document.createElement("p");   
@@ -34,7 +34,7 @@ fetch(requestURL)
         card.appendChild(townRainfall);
         card.appendChild(townImage);
 
-        document.querySelector("div.cards").appendChild(card); 
+        document.querySelector("div.towninfo").appendChild(card); 
 
         if (i==6) {
             townImage.setAttribute("src", "images/preston.jpg");

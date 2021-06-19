@@ -57,14 +57,14 @@ nav ul li a {
     display: block;
     padding: .8rem 2%; 
     color: white;      
-    text-decoration: none;  
-    text-shadow: 1px 1px 0 #000;   
+    text-decoration: none;    
     border-top:1px solid rgba(0, 0, 0, 0.3);
       }
 
 nav ul li.active a {
     background-color: white;
-    color: #2b4162;    
+    color: #2b4162;  
+    font-weight: 600;
   }
 
 nav ul li a:hover {
