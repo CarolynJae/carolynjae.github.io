@@ -141,6 +141,7 @@ main img {
 .galleryimg {
   background-color: white;
   text-align: center;
+  border-radius: 20px 20px 0 0;
 }
 
 .wireframes {
