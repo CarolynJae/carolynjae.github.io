@@ -156,7 +156,13 @@ main img {
 
 /*------- FORM --------*/
 
-form fieldset {
+#stormform {
+  background-color: white;
+  border: 20px solid #ffcf56;
+  border-radius: 30px;
+}
+  
+  form fieldset {
   margin: 2rem 0;
   background-color: white;
   border: 1px solid #a3a3a3;
