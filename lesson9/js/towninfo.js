@@ -33,7 +33,8 @@ fetch(requestURL)
         let townImage = document.createElement("img");
         townImage.setAttribute("src", "images/preston.jpg");
         townImage.setAttribute("alt", towns[6].name);
-        card.appendChild(infoDiv, townImage);
+        card.appendChild(infoDiv);
+        card.appendChild(townImage);
 
         document.querySelector("div.cards").appendChild(card); 
 
@@ -63,7 +64,8 @@ fetch(requestURL)
         let townImage2 = document.createElement("img");
         townImage2.setAttribute("src", "images/sodasprings.jpg");
         townImage2.setAttribute("alt", towns[0].name);
-        card2.appendChild(infoDiv2, townImage2);
+        card2.appendChild(infoDiv2);
+        card2.appendChild(townImage2);
 
         document.querySelector("div.cards").appendChild(card2); 
 
@@ -92,7 +94,9 @@ fetch(requestURL)
     let townImage3 = document.createElement("img");
     townImage3.setAttribute("src", "images/haven.jpg");
     townImage3.setAttribute("alt", towns[2].name);
-    card3.appendChild(infoDiv3, townImage3);
+    card3.appendChild(infoDiv3);
+    card3.appendChild(townImage3);
+    
 
     document.querySelector("div.cards").appendChild(card3); 
 
