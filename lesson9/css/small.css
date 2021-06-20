@@ -58,9 +58,8 @@ nav ul li a {
     display: block;
     padding: .8rem 2%; 
     color: white;      
-    text-decoration: none;    
-    border-top:1px solid rgba(0, 0, 0, 0.3);
-      }
+    text-decoration: none;
+  }
 
 nav ul li.active a {
     background-color: white;
@@ -79,8 +78,9 @@ nav ul.hide {
   }
   
 body {
-    max-width: 900px;
-    margin: auto;            
+    max-width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;            
     font-family: Quicksand, Helvetica, sans-serif; 
     font-size: 20px;
     color: #2b4162;
@@ -88,14 +88,14 @@ body {
 
 main {    
       padding: 1em;
-      background-color: white;
-      border: 20px solid #ffcf56;
-      margin-top: 1em;
-      margin-bottom: 1em;
+      background-color: #ffcf56;
+      margin-top: .25em;
+      margin-bottom: 1em;      
     }
 
 main img {
       width: 100%;
+      border-radius: 20px;
     }
 
 .herodiv {
@@ -210,11 +210,11 @@ form input.submitBtn {
   margin: .2rem;
   padding: .5rem;  
   text-align: center;
+  border-radius: 15px;
 }
 
 .cards section img {
-  width: 80%;
-  max-width: 100%;  
+  border-radius: 10px;
 }
 
 
