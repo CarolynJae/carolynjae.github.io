@@ -79,7 +79,7 @@ nav ul.hide {
   
 body {
     max-width: 100%;
-    max-width: 1050px;
+    width: 1050px;
     margin: 0 auto;            
     font-family: Quicksand, Helvetica, sans-serif; 
     font-size: 20px;
