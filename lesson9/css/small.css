@@ -121,9 +121,17 @@ main img {
     display: none;
   }
 
+.article {
+    display: block;
+  }
+
 .article img {
     width: 50%;
   }
+
+.hillrace {
+  width: 50%;
+}
 
 .gallery {
   display: grid;
