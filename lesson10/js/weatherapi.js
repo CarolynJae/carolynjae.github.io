@@ -7,9 +7,7 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
 
-    let p1 = document.createElement("p");
-    p1.innerHTML = `<span id="current-temp">Temperature: </span> ${[0]}`;
-
+   
     document.getElementById('current-temp').textContent = jsObject.main.temp;
 
 
