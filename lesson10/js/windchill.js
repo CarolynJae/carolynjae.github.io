@@ -41,7 +41,6 @@ fetch(weatherURL)
     const fivedayforecast = jsObject.list.filter((forecast) =>
       forecast.dt_txt.includes("18:00:00")
     );
-    console.log(fivedayforecast);
 
     for (let i = 0; i < fivedayforecast.length; i++) {
       var forecast = fivedayforecast[i];
@@ -51,19 +50,14 @@ fetch(weatherURL)
       var forecastDate = new Date(forecast.dt_txt);
       var forecastDay = days[forecastDate.getDay()];
 
-      console.log(forecast);
-      console.log(forecastDay);
-
-      document.getElementById(tempElement).textContent = forecast.main.temp;
-
       const desc = forecast.weather[0].description;
-      const iconsrc =
-        "https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png";
-
-      document.getElementById(iconElement).setAttribute("src", iconsrc);
-      document.getElementById(iconElement).setAttribute("alt", desc);
+      const iconsrc = 
+      "https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png";
 
       document.getElementById(dayElement).textContent = forecastDay;
-      
-    }
-  });
+      document.getElementById(iconElement).setAttribute("src", iconsrc);
+      document.getElementById(iconElement).setAttribute("alt", desc);
+      document.getElementById(tempElement).textContent = forecast.main.temp;
+
+          
+    }});
