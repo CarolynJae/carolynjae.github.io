@@ -1,0 +1,86 @@
+@media only screen and (min-width: 38em) {   
+    button {
+        display: none;
+    }
+        
+    nav ul {
+        display: flex;        
+        justify-content: space-around;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }  
+
+    nav ul li a {        
+        border: none;
+        padding: .6rem 1rem;
+    }
+
+    #summary {
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        top: 35px;
+        left: 35px;
+        font-size: 14px;            
+    }
+
+    #forecast {
+        display:grid;
+        grid-column:1/3;
+        grid-row:3/4;
+        margin: 1em;        
+    } 
+
+    table {
+        width: 75%;
+        border-collapse: collapse;
+        margin: 0 auto;        
+    }
+    
+    th {
+        background-color: #0b6e4f;
+        color: white;
+    }
+
+    td {
+        background-color: white;
+        line-height: 2em;
+        text-align: center;
+    }
+
+    table, th, td {
+         border: 2px solid black;
+    }
+
+    #map {        
+        max-width: 30%;
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    .gallery {        
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+    .odds, .even {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .even img {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    .even info {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+     
+}
+
+    

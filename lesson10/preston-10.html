@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">    
+    <link rel="shortcut icon" href="favicon.ico">    
+    <title>Preston Town Page</title>
+  </head>
+
+  <body>
+
+    <div id="topbanner">Saturday = Preston Pancakes in the Park!   
+       9:00 a.m. Saturday at the city park pavilion.
+      </div>
+
+    <header>
+
+      <picture id="logo">
+        <img src="images/weatherducknew.png" alt="WeatherDuck Logo"> 
+      </picture>      
+
+      <section class="headings">
+        <h1>The Weather Duck</h1> 
+        <h4>"Getting All Your Ducks in a Row"</h4>
+      </section>    
+                  
+  </header>
+
+  <nav class="clearfix">    
+    <button onclick="toggleMenu()">&#9776;</button>        
+    <ul id="primaryNav" class="hide">   
+      <li><a href="weatherduck.html">Home</a></li>             
+      <li class="active"><a href="preston.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li> 
+      <li><a href="stormcenter.html">Storm Center</a></li> 
+      <li><a href="gallery.html">Gallery</a></li>              
+  </ul>   
+</nav>  
+    
+    <main>
+         <h2>Preston Idaho</h2>
+         <div class="herodiv">
+          <img src="images/umbrellatown.jpg" alt="Umbrella Festival">
+            
+            <section id="summary">
+              <h3>Weather Summary</h3>
+              <p>Currently: <span id="temperature">44&#8457;</span></p>
+              <p>High Temp: <span id="high">52&#8457;</span></p>
+              <p>Wind Chill: <span id="windChill"></span></p>
+              <p>Humidity: <span id="humidity">25%</span></p>
+              <p>Wind Speed: <span id="windspeed">6 mph</span></p>              
+            </section>
+         </div>
+         
+         <div id="forecast">
+           <h3>Five Day Forecast</h3>
+            <table>
+              <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </tr>
+              <tr>
+                <td>52&#176;</td>
+                <td>51&#176;</td>
+                <td>48&#176;</td>
+                <td>48&#176;</td>
+                <td>50&#176;</td>
+              </tr>              
+            </table>
+          </div>
+
+         <div class="article">
+          <img src="images/fresco.jpg" alt="Fresco Photo">
+          <h3>Founders Day Fresco</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sit, quo sunt facere quod tenetur perspiciatis id maiores 
+            nostrum, nisi eos ullam, ducimus suscipit animi libero accusamus 
+            fugiat at voluptate inventore.</p>  
+         </div>         
+    </main>
+
+    <footer>
+      <div id="contact">
+      Contact Information
+      <p>&#9743; 208-555-0123</p>
+      <p>&#9993; info@theweatherduck.com</p>
+      </div>
+      
+      <picture id="map"><img src="images/prestonmap.png" alt="Preston"></picture>
+      <p>&copy; <span id="currentyear"></span>| Carolyn Sundrud | Fort Worth - Texas |
+          <a id="byui" href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </p>
+        <p>Current Date: <span id="year"></span></p>        
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>  
+  </body>
+</html>
