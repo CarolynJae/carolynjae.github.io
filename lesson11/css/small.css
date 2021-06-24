@@ -232,6 +232,25 @@ form input.submitBtn {
   border-radius: 10px;
 }
 
+.contact {
+  background-color: white;  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.contact h3 {
+  border-bottom: 2px solid #2b4162;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.contact p {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
 
 
 /*------- FOOTER ------*/

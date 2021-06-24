@@ -11,11 +11,11 @@ function toggleMenu() {
 
 /*current date*/
 
-    var today = new Date();
+    let today = new Date();
 
-    var dd = String(today.getDate()).padStart(2, '0');
+    let dd = String(today.getDate()).padStart(2, '0');
 
-    var days = [
+    let days = [
       'Sunday',
       'Monday',
       'Tuesday',
@@ -25,9 +25,9 @@ function toggleMenu() {
       'Saturday',
     ];
 
-    var dayName = days[today.getDay()];
+    let dayName = days[today.getDay()];
 
-    var months = [
+    let months = [
       'January',
       'February',
       'March',
@@ -42,11 +42,11 @@ function toggleMenu() {
       'December',
     ];
 
-    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0');
 
-    var monthName = months[today.getMonth()];
+    let monthName = months[today.getMonth()];
 
-    var yyyy = today.getFullYear();
+    let yyyy = today.getFullYear();
 
     today = dayName + ', ' + dd + '' + monthName + '' + yyyy;
 
@@ -54,7 +54,7 @@ function toggleMenu() {
 
     document.querySelector('#year').textContent = today;
 
-  /*Top Banner - display only on Friday*/
+/*Top Banner - display only on Friday*/
 
     let d = new Date();
 
@@ -70,3 +70,6 @@ function adjustRating(rating) {
   document.getElementById("ratingvalue").innerHTML = rating;
 }
   
+/*Last Visited*/
+
+

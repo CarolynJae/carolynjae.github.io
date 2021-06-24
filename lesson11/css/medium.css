@@ -54,8 +54,10 @@
          border: 2px solid black;
     }
 
-    #map {
-        display: block;
+    #map {        
+        max-width: 30%;
+        grid-column: 2/3;
+        grid-row: 1/3;
     }
 
     .gallery {        
