@@ -41,6 +41,8 @@
     
     th {
         background-color: #0b6e4f;
+        border-bottom: 2px solid black;
+        line-height: 2em;
         color: white;
     }
 
@@ -50,8 +52,12 @@
         text-align: center;
     }
 
-    table, th, td {
+    table {
          border: 2px solid black;
+    }
+
+    table img {
+        width: 70%;
     }
 
     #map {        
