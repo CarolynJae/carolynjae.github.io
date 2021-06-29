@@ -48,32 +48,40 @@
          <div class="herodiv">
           <img src="images/fishhaven.jpg" alt="village pic">
             
-            <section id="summary">
-              <h3>Weather Summary</h3>
-              <p>Currently: <span id="temperature">44&#8457;</span></p>
-              <p>High Temp: <span id="high">52&#8457;</span></p>
-              <p>Wind Chill: <span id="windChill"></span></p>
-              <p>Humidity: <span id="humidity">25%</span></p>
-              <p>Wind Speed: <span id="windspeed">6 mph</span></p>              
-            </section>
-         </div>
-         
-         <div id="forecast">
+          <section id="summary">
+            <h3>Weather Summary</h3>
+            <p>Currently: <span id="temperature"></span>&#8457; & <span id="conditions"></span></p>
+            <p>High Temp: <span id="high"></span>&#8457;</p>
+            <p>Wind Speed: <span id="windspeed"></span> mph</p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+                          
+          </section>
+       </div>
+          
+          <div id="forecast">
            <h3>Five Day Forecast</h3>
             <table>
               <tr>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
+                <th><span id="day0"></span></th>
+                <th><span id="day1"></span></th>
+                <th><span id="day2"></span></th>
+                <th><span id="day3"></span></th>
+                <th><span id="day4"></span></th>
               </tr>
               <tr>
-                <td>52&#176;</td>
-                <td>51&#176;</td>
-                <td>48&#176;</td>
-                <td>48&#176;</td>
-                <td>50&#176;</td>
+                <td><img id="icon0"></td>
+                <td><img id="icon1"></td>
+                <td><img id="icon2"></td>
+                <td><img id="icon3"></td>
+                <td><img id="icon4"></td>
+              </tr> 
+              <tr>
+                <td><span id="temp0"></span>&#8457;</td>
+                <td><span id="temp1"></span>&#8457;</td>
+                <td><span id="temp2"></span>&#8457;</td>
+                <td><span id="temp3"></span>&#8457;</td>
+                <td><span id="temp4"></span>&#8457;</td>
               </tr>              
             </table>
           </div>
