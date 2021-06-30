@@ -11,11 +11,11 @@ fetch(weatherURL)
     // console.log(jsObject.list[0].main);
 
     document.getElementById("temperature").textContent =
-      jsObject.list[0].main.temp;
+      Math.round(jsObject.list[0].main.temp);
     document.getElementById("conditions").textContent =
       jsObject.list[0].weather[0].description;
     document.getElementById("high").textContent =
-      jsObject.list[0].main.temp_max;
+      Math.round(jsObject.list[0].main.temp_max);
     document.getElementById("humidity").textContent =
       jsObject.list[0].main.humidity;
     document.getElementById("windspeed").textContent =
