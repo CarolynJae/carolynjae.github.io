@@ -1,7 +1,7 @@
 /* Weather Summary Data */
 
 const weatherURL =
-  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ba93ecdd2871472e91bb1e18e6fe2f14&units=imperial";
+  "https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=ba93ecdd2871472e91bb1e18e6fe2f14&units=imperial";
 
 fetch(weatherURL)
   .then((response) => response.json())
