@@ -36,7 +36,7 @@ fetch(requestURL)
         townInfo.appendChild(townRainfall);
 
         let townImage = document.createElement("img");
-        townImage.setAttribute("src", "images/preston.jpg");
+        townImage.setAttribute("src", "images/preston2.jpg");
         townImage.setAttribute("alt", towns[6].name);
 
         card.appendChild(townInfo);
@@ -70,7 +70,7 @@ fetch(requestURL)
         townInfo.appendChild(townRainfall);
 
         townImage = document.createElement("img");
-        townImage.setAttribute("src", "images/sodasprings.jpg");
+        townImage.setAttribute("src", "images/sodasprings2.jpg");
         townImage.setAttribute("alt", towns[0].name);
 
         card.appendChild(townInfo);
@@ -106,7 +106,7 @@ fetch(requestURL)
           townInfo.setAttribute("class", "info");
   
           townImage = document.createElement("img");
-          townImage.setAttribute("src", "images/fishhaven.jpg");
+          townImage.setAttribute("src", "images/fishhaven2.jpg");
           townImage.setAttribute("alt", towns[2].name);
   
           card.appendChild(townInfo);
