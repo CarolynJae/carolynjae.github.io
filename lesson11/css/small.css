@@ -125,11 +125,7 @@ main img {
     display: block;
   }
 
-.article img {
-    width: 50%;
-  }
-
-.hillrace {
+#hillrace {
   width: 50%;
 }
 
@@ -142,6 +138,7 @@ main img {
   background-color: white;
   text-align: center;
   border-radius: 20px 20px 0 0;
+  margin: 2px;
 }
 
 .wireframes {
@@ -222,10 +219,11 @@ form input.submitBtn {
 
 .cards section { 
   background-color: #84a9c0;
-  margin: .2rem;
+  margin: .5rem;
   padding: .5rem;  
   text-align: center;
   border-radius: 15px;
+  
 }
 
 .cards section img {
@@ -276,10 +274,6 @@ footer {
       color: white;
       padding: 10px;  
       text-align: center;    
-  }
-
-#map {
-    display: none;
   }
 
 #byui {
