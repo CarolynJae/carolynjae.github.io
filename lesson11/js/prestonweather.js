@@ -43,9 +43,35 @@ fetch(weatherURL)
       document.getElementById(iconElement).setAttribute("src", iconsrc);
       document.getElementById(iconElement).setAttribute("alt", desc);
       document.getElementById(tempElement).textContent = Math.round(forecast.main.temp);          
-    }
+    }   
+  
+  });
 
-    document.getElementById(events).textContent = townEvents;
+  /* Town Events */
+
+  const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+  fetch(requestURL)
+  .then(function (response) {
+      return response.json();
+  })
   
+  .then(function (jsonObject) {
+   //   console.table(jsonObject);
+      const towns = jsonObject["towns"];
+      for (i=0; i<towns.length; i++) {
+          if (towns[i].name == "Preston") {
+              let eventCard = document.createElement("section");
+              let townName = document.createElement("h2");  
+              let townEvents = document.createElement("p");        
   
+          townName.textContent = towns[i].name;
+          townEvents.textContent = towns[i].events;
+          
+          card.appendChild(townName);
+          card.appendChild(townEvents);        
+  
+          document.querySelector("div.").appendChild(eventCard); 
+          
+      }}
   });
