@@ -47,31 +47,31 @@ fetch(weatherURL)
   
   });
 
-  /* Town Events */
+  /* Preston Town Events */
 
-  const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+  const townListURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
-  fetch(requestURL)
+  fetch(townListURL)
   .then(function (response) {
       return response.json();
   })
   
-  .then(function (jsonObject) {
-   //   console.table(jsonObject);
-      const towns = jsonObject["towns"];
+  .then(function (townlist) {
+   //   console.table(townlist);
+      const towns = townlist["towns"];
       for (i=0; i<towns.length; i++) {
           if (towns[i].name == "Preston") {
               let eventCard = document.createElement("section");
-              let townName = document.createElement("h2");  
+              let townHeading = document.createElement("h4");  
               let townEvents = document.createElement("p");        
   
-          townName.textContent = towns[i].name;
+          townHeading.textContent = "Preston Events";
           townEvents.textContent = towns[i].events;
           
-          card.appendChild(townName);
-          card.appendChild(townEvents);        
+          eventCard.appendChild(townHeading);
+          eventCard.appendChild(townEvents);        
   
-          document.querySelector("div.").appendChild(eventCard); 
+          document.querySelector("div.eventCard").appendChild(eventCard); 
           
       }}
   });
