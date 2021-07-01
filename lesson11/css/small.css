@@ -1,3 +1,31 @@
+body {
+  max-width: 100%;
+  width: 1050px;
+  margin: 0 auto;            
+  font-family: Quicksand, Helvetica, sans-serif; 
+  font-size: 20px;
+  color: #2b4162;
+}
+
+main {    
+    padding: 2em;
+    background-color: #ffcf56;
+    margin-top: .25em;
+    margin-bottom: 1em;      
+  }
+
+main img {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+.herodiv {
+    position: relative;
+  }
+
+
+/* ---PANCAKES BANNER - DISPLAYED ON FRIDAYS ONLY -- */
+
 #topbanner {
   background-color: #f3a712;
   color: black;
@@ -6,6 +34,8 @@
   font-size: 1.2rem;  
   padding: .5em;
 }
+
+/* ---HEADER FOR ALL PAGES -- */
 
 header {
     width: 100%;
@@ -30,6 +60,8 @@ header img {
 .headings h4 {
   margin-top: -1.5rem;
   }
+
+/* ---NAVIGATION BAR FOR ALL PAGES -- */
 
 nav {
   margin: 0 auto; 
@@ -76,31 +108,8 @@ nav ul li a:hover {
 nav ul.hide {
     display: none;
   }
-  
-body {
-    max-width: 100%;
-    width: 1050px;
-    margin: 0 auto;            
-    font-family: Quicksand, Helvetica, sans-serif; 
-    font-size: 20px;
-    color: #2b4162;
-  }
 
-main {    
-      padding: 1em;
-      background-color: #ffcf56;
-      margin-top: .25em;
-      margin-bottom: 1em;      
-    }
-
-main img {
-      width: 100%;
-      border-radius: 20px;
-    }
-
-.herodiv {
-      position: relative;
-    }
+/* -- WEATHER SUMMARY FOR TOWN PAGES -- */
 
 #summary {
     background-color: #89A4C0; 
@@ -117,10 +126,35 @@ main img {
     border-bottom: 2px solid;
   }
 
+/* -- WEATHER FORECAST FOR TOWN PAGES -- */
+
 #forecast {
     display: none;
   }
 
+/* -- TOWNINFO FOR MAIN PAGE -- */
+  
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;   
+  align-content: center;
+}
+
+.cards section { 
+  background-color: #84a9c0;
+  margin: .5rem;
+  padding: .5rem;  
+  text-align: center;
+  border-radius: 15px;
+  
+}
+
+.cards section img {
+  border-radius: 10px;
+}
+
+/* -- ARTICLE -- */
+  
 .article {
     display: block;
   }
@@ -129,29 +163,7 @@ main img {
   width: 50%;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.galleryimg {
-  background-color: white;
-  text-align: center;
-  border-radius: 20px 20px 0 0;
-  margin: 2px;
-}
-
-.wireframes {
-  align-content: center;
-  margin: auto;
-  border: 1px double #a3a3a3;
-}
-
-#smallframe {
-  width: 50%;
-}
-
-/*------- FORM --------*/
+/* -- STORMCENTER -- */
 
 #stormform {
   background-color: white;
@@ -211,24 +223,21 @@ form input.submitBtn {
   max-width: 20rem;
 }
 
-.cards {
+/*-- GALLERY --*/
+
+.gallery {
   display: grid;
-  grid-template-columns: 1fr;   
-  align-content: center;
+  grid-template-columns: 1fr;
 }
 
-.cards section { 
-  background-color: #84a9c0;
-  margin: .5rem;
-  padding: .5rem;  
+.galleryimg {
+  background-color: white;
   text-align: center;
-  border-radius: 15px;
-  
+  border-radius: 20px 20px 0 0;
+  margin: 2px;
 }
 
-.cards section img {
-  border-radius: 10px;
-}
+/* -- CONTACT INFO -- */
 
 .weatherduckinfo {
   background-color: white;  
@@ -261,8 +270,7 @@ form input.submitBtn {
   max-width: 3rem;
 }
 
-
-/*------- FOOTER ------*/
+/* -- FOOTER -- */
 
 footer {
       background-color: #2b4162;
