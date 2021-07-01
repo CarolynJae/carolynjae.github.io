@@ -250,7 +250,7 @@ form input.submitBtn {
   grid-row: 2/3;
 }
 
-#office {
+.map {
   max-width: 30em;
   grid-column: 2/3;
   grid-row: 1/3;
