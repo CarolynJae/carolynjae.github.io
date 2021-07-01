@@ -64,7 +64,7 @@ fetch(weatherURL)
               let townHeading = document.createElement("h4");  
               let townEvents = document.createElement("p");        
   
-          townHeading.textContent = "Fish Haven Events";
+          townHeading.textContent = "Upcoming Events";
           townEvents.textContent = towns[i].events;
           
           eventCard.appendChild(townHeading);
