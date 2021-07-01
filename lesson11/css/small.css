@@ -171,7 +171,7 @@ nav ul.hide {
   border-radius: 30px;
 }
   
-  form fieldset {
+form fieldset {
   margin: 2rem 0;
   background-color: white;
   border: 1px solid #a3a3a3;
@@ -245,7 +245,6 @@ form input.submitBtn {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
-  margin: 2rem;
 }
 
 .contact h3 {
