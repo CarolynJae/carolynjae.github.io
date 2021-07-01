@@ -7,8 +7,8 @@ fetch(weatherURL)
   .then((response) => response.json())
 
   .then((jsObject) => {
-    // console.log(jsObject);
-    // console.log(jsObject.list[0].main);
+    console.log(jsObject);
+    console.log(jsObject.list[0].main);
 
     document.getElementById("temperature").textContent =
       Math.round(jsObject.list[0].main.temp);
@@ -42,7 +42,10 @@ fetch(weatherURL)
       document.getElementById(dayElement).textContent = forecastDay;
       document.getElementById(iconElement).setAttribute("src", iconsrc);
       document.getElementById(iconElement).setAttribute("alt", desc);
-      document.getElementById(tempElement).textContent = Math.round(forecast.main.temp);
+      document.getElementById(tempElement).textContent = Math.round(forecast.main.temp);          
+    }
 
-          
-    }});
+    document.getElementById(events).textContent = townEvents;
+  
+  
+  });
