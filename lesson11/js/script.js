@@ -48,7 +48,7 @@ function toggleMenu() {
 
     let yyyy = today.getFullYear();
 
-    today = dayName + ', ' + dd + '' + monthName + '' + yyyy;
+    today = dayName + ', ' + dd + ' ' + monthName + ' ' + yyyy;
 
     const currentDate = new Date();
 
@@ -71,32 +71,4 @@ function adjustRating(rating) {
 }
   
 /*Last Visited*/
-
-d = new Date();
-n = d.getFullYear();
-document.querySelector('#year').innerHTML = n;
-
-options = {
-  weekday: 'long',
-  day: 'numeric',
-  month: 'long',
-  year: 'numeric'
-};
-
-const ONESECOND = 1000;
-const  convert = 60*60*24* ONESECOND;
-
-let today = new Date();
-let currentTime = today.getTime();
-
-if(!localStorage.getItem('lastvisited')) {
-  localStorage.setItem('lastvisited', currentTime);
-}
-
-var lastTime = parseInt(localStorage.getItem('lastvisited'));
-var days = (currentTime - lastTime) /convert;
-
-
-document.querySelector('.days').innerHTML = days.toFixed(0);
-
 
