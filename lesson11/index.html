@@ -45,8 +45,13 @@
 
     <main>
 
-      <div class="herodiv">                 
-          <img src="images/homepic.jpg" alt="country barn pic">                     
+      <div class="herodiv">           
+          <picture class="towntopper">
+            <source media="(max-width: 600px)" srcset="images/homepicsmall.jpg">
+            <source media="(max-width: 800px)" srcset="images/homepicmed.jpg">
+            <source media="(max-width: 1200px)" srcset="images/homepiclarge.jpg">
+            <img src="images/homepic.jpg" alt="country barn pic">                                 
+          </picture>                   
       </div>
 
       <div class="cards"></div>
@@ -91,10 +96,10 @@
          The Weather Duck &copy; <span id="currentyear"></span> | Carolyn Sundrud | Fort Worth - Texas |
           <a id="byui" href="https://www.byui.edu/online">BYUI Online Learning</a>
       </p>
-      <p>
-          <span id="year"></span>
-          <span id="days"></span>
-      </p>        
+
+      <p><span id="year"></span><span id="days"></span></p>
+      <p>Weather data from <a href="https://openweathermap.org">OpenWeatherMap.org</a></p>
+
     </footer>
 
   </body>
