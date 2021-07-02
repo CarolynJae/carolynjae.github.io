@@ -46,7 +46,12 @@
     <main>
       <h2>Preston Idaho</h2>
       <div class="herodiv">
-       <img src="images/prestontop.jpg" alt="Umbrella Festival">
+        <picture class="towntopper">
+          <source media="(max-width: 600px)" srcset="images/prestontopsmall.jpg">
+          <source media="(max-width: 800px)" srcset="images/prestontopmed.jpg">
+          <source media="(max-width: 1200px)" srcset="images/prestontoplarge.jpg">
+          <img src="images/prestontop.jpg" alt="Umbrella Festival">
+        </picture>
          
          <section id="summary">
            <h3>Weather Summary</h3>

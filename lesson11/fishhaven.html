@@ -46,7 +46,12 @@
     <main>
          <h2>Fish Haven Idaho</h2>
          <div class="herodiv">
-          <img src="images/fishhaventop.jpg" alt="village pic">
+          <picture class="towntopper">
+            <source media="(max-width: 600px)" srcset="images/fishhaventopsmall.jpg">
+            <source media="(max-width: 800px)" srcset="images/fishhaventopmed.jpg">
+            <source media="(max-width: 1200px)" srcset="images/fishhaventoplarge.jpg">
+            <img src="images/fishhaventop.jpg" alt="village pic">
+          </picture>
             
           <section id="summary">
             <h3>Weather Summary</h3>
