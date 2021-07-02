@@ -282,6 +282,10 @@ footer {
     color: white;
   }
 
+  #openweather {
+    color: white;
+  }
+
 .clearfix:after {
       content: "";
       display: table;
