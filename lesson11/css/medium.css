@@ -17,15 +17,6 @@
         padding: .6rem 1rem;
     }
 
-    #summary {
-        position: absolute;
-        width: 220px;
-        height: 220px;
-        top: 35px;
-        left: 35px;
-        font-size: 14px;            
-    }
-
     #forecast {
         display:grid;
         grid-column:1/3;
