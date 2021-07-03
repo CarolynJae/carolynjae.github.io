@@ -15,12 +15,21 @@ main {
   }
 
 main img {
-    width: 100%;
-    border-radius: 20px;
+    width: 98%;
+    border-radius: 15px;
+    margin: .5rem;
   }
 
 .herodiv {
     position: relative;
+  }
+
+  h4, h5 {
+    margin-top: -1.2rem;
+  }
+
+  h6 {
+    margin-top: -.5rem;
   }
 
 
@@ -51,14 +60,6 @@ header {
 header img {
     max-width: 80px;
     float: left;
-  }
-
-  h3 {
-    text-align: center;
-  }
-
-.headings h4 {
-  margin-top: -1.5rem;
   }
 
 /* ---NAVIGATION BAR FOR ALL PAGES -- */
@@ -157,10 +158,22 @@ nav ul.hide {
   
 .article {
     display: block;
+    background-color: white;
+    border-radius: 15px;
+    margin: .5rem;
+    padding: 1.5rem;
   }
 
-#hillrace {
+#wildfire, 
+#firefighters {
   width: 50%;
+}
+
+.eventCard {
+  background-color: #2b4162;
+  color: white;
+  border-radius: 15px;
+  padding: 1.5rem;
 }
 
 /* -- STORMCENTER -- */
@@ -246,10 +259,12 @@ form input.submitBtn {
 
 .weatherduckinfo {
   background-color: white;  
+  border-radius: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
+  margin: .5rem;
 }
 
 .contact h3 {

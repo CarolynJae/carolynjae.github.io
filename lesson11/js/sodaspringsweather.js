@@ -61,7 +61,7 @@ fetch(weatherURL)
       for (i=0; i<towns.length; i++) {
           if (towns[i].name == "Soda Springs") {
               let eventCard = document.createElement("section");
-              let townHeading = document.createElement("h4");  
+              let townHeading = document.createElement("h3");  
               let townEvents = document.createElement("p");        
   
           townHeading.textContent = "Upcoming Events";
