@@ -3,7 +3,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .galleryimg:hover {box-shadow: 0 0 50px #333;}
+    .gallerycards:hover {box-shadow: 0 0 50px #333;}
 
     form .sbs {
         padding: .4rem 0;
