@@ -46,7 +46,12 @@ fetch(weatherURL)
           
     }});
 
-     /* Fish Haven Town Events */
+   /* Fish Haven Town Events */
+
+  /* Credit where credit is due: I was able to pull the town event information with
+  no problem, but couldn't figure out how to split it into separate lines for the
+  separate events. I consulted with my javascript-saavy son and also compared my code 
+  against several classmates and was able to adjust my code to make it do what I wanted.*/
 
   const townListURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
@@ -56,21 +61,19 @@ fetch(weatherURL)
   })
   
   .then(function (townlist) {
-   //   console.table(townlist);
-      const towns = townlist["towns"];
-      for (i=0; i<towns.length; i++) {
-          if (towns[i].name == "Fish Haven") {
-              let eventCard = document.createElement("section");
-              let townHeading = document.createElement("h3");  
-              let townEvents = document.createElement("p");        
-  
-          townHeading.textContent = "Upcoming Events";
-          townEvents.textContent = towns[i].events;
-          
-          eventCard.appendChild(townHeading);
-          eventCard.appendChild(townEvents);        
-  
-          document.querySelector("div.eventCard").appendChild(eventCard); 
-          
-      }}
+     console.table(townlist);
+      const idahoTown = townlist.towns.filter((thisTown) => thisTown.name.includes("Fish Haven"));
+
+      let events = idahoTown[0].events;
+      let eventCard = document.createElement("section");
+      let eventInfo = document.createElement("div");
+      
+      events.forEach(event => {
+        let townEvents = document.createElement("p");
+        townEvents.textContent = event;
+        eventInfo.appendChild(townEvents);
+        eventCard.appendChild(eventInfo);          
+      });
+
+      document.querySelector("div.eventCard").appendChild(eventCard);
   });

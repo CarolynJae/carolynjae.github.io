@@ -51,7 +51,7 @@ fetch(weatherURL)
   /* Credit where credit is due: I was able to pull the town event information with
   no problem, but couldn't figure out how to split it into separate lines for the
   separate events. I consulted with my javascript-saavy son and also compared my code 
-  against several classmates and was able to adjust my   code to make it do what I wanted.*/
+  against several classmates and was able to adjust my code to make it do what I wanted.*/
 
   const townListURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
