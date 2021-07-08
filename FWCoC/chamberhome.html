@@ -15,9 +15,13 @@
 
   <body>
       <header>
+
+          <a href="chamberhome.html"><img class="logo" src="images/fwlogo.png" alt="Fort Worth Logo"></a>
+
           <div id="members">
             <a id="login" href="">Member Login</a>          
-          </div>          
+          </div>  
+
       </header>
 
       <nav class="clearfix">
@@ -33,8 +37,16 @@
 
       <main>
         <section id="weather">
-          <div id="current"></div>
-          <div id="forecast"></div>
+          <div id="current">            
+              <h3>Fort Worth Weather</h3>
+              <p>Currently: <span id="conditions"></span></p>
+              <p>Temperature: <span id="temperature"></span>&#8457</p>
+              <p>Humidity: <span id="humidity"></span>%</p>            
+          </div>
+          
+          <div id="forecast">
+
+          </div>
         </section>
 
         <section id="events"></section>
