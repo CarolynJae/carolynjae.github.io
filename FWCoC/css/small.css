@@ -5,3 +5,50 @@ body {
     max-width: 1100px;
     background-color: #c3c8cc;
 }
+
+/* ---NAVIGATION BAR FOR ALL PAGES -- */
+
+nav {
+    margin: none; 
+    width: 100%; 
+    background-color: #2b4162;
+}
+  
+  button {    
+    display: block;
+    background-color: transparent;  
+    border: none;
+    padding: .4rem;
+    font-size: 1.6rem;
+    color: white;
+  }
+  
+  nav ul {
+      display: block;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;   
+    }
+  
+  nav ul li a {    
+      display: block;
+      padding: .8rem 2%; 
+      color: white;      
+      text-decoration: none;
+    }
+  
+  nav ul li.active a {
+      background-color: white;
+      color: #2b4162;      
+      font-weight: 600;
+    }
+  
+  nav ul li a:hover {
+      background-color: white;
+      color: #2b4162;      
+      font-weight: 600;
+    }     
+  
+  nav ul.hide {
+      display: none;
+    }
