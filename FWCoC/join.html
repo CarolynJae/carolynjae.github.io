@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fort Worth Chamber of Commerce Business Application Form">
+    <title>Join the Fort Worth Chamber of Commerce</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">    
+    <link rel="shortcut icon" href="fwicon.ico">     
+  </head>
+
+  <body>
+     <header>
+          <a href="chamberhome.html"><img class="logo" src="images/fwlogo.png" alt="Fort Worth Logo"></a>
+     </header>
+
+      <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>        
+        <ul id="primaryNav" class="hide">   
+          <li class="active"><a href="chamberhome.html">Home</a></li>             
+          <li><a href="city.html">Fort Worth</a></li>
+          <li><a href="join.html">Join the Chamber</a></li>
+          <li><a href="directory.html">Business Directory</a></li> 
+          <li><a href="contact.html">Contact</a></li> 
+        </ul>  
+      </nav>
+
+      <main id="joinus">
+        <h2>Join the Fort Worth Chamber of Commerce</h2>
+  
+        <form method="get" action="thanks.html">
+          <fieldset>
+              <legend>Please fill out the application form</legend>
+              <label class="top">First name* <input type="text" name="firstname" pattern="[a-zA-Z ]{5,}" required></label>
+              <label class="top">Last name* <input type="text" name="lastname" pattern="[a-zA-Z ]{5,}" required></label>
+              <label class="top">Title <input type="text" name="title" pattern="[a-zA-Z ]{5,}"></label>
+              <label class="top">Email* <input type="email" name="email" placeholder="name@gmail.com" required></label>            
+              <label class="top">Cell phone <input type="tel" name="phone"></label>
+              <label class="top">Business name* <input type="text" name="bname" pattern="[a-zA-Z ]{5,}" required></label>
+              <label class="top">Business address <input type="text" name="baddress" pattern="[a-zA-Z ]{5,}"></label>
+              <label class="top">Business website <input type="text" name="bwebsite" pattern="[a-zA-Z ]{5,}"></label>
+                               
+          </fieldset>
+  
+          <fieldset>
+            <legend>Membership Level</legend>            
+                <label class="top">Please choose one <input list="level"></label>
+              
+                <datalist id="level">
+                <option value="Non-profit - $100"></option>
+                <option value="Bronze - $200"></option>
+                <option value="Silver-$400"></option>
+                <option value="Gold-$1000"></option>
+                
+              </datalist>
