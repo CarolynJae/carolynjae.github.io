@@ -1,4 +1,4 @@
-let getmyURL= "https://carolynjae.github.io/fwcoc/businessdata.json";
+let getmyURL= "https://carolynjae.github.io/fwchamber/businessdata.json";
 
 fetch(getmyURL)
   .then(function (response) {
