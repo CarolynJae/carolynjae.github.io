@@ -1,0 +1,20 @@
+@media only screen and (min-width: 1228px) {
+    
+    nav button {
+        display: none;
+    }
+    
+    nav ul {
+        display: flex;        
+        justify-content: space-around;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }  
+
+    nav ul li a {        
+        border: none;
+        padding: .6rem 1rem;
+    }
+}

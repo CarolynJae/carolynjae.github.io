@@ -1,6 +1,6 @@
-//const requestDATA = "..businessdata.json";
+const getMyURL= "https://carolynjae.github.io/fwchamber/businessdata.json";
 
-fetch("businessdata.json")
+fetch(getMyURL)
   .then(function (response) {
     return response.json();
   })
