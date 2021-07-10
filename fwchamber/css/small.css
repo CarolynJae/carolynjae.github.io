@@ -90,7 +90,8 @@ nav ul.hide {
 
 #weather, 
 #events, 
-#purpose {
+#purpose,
+#advertising {
   background-color: white;
   border-radius: 20px;
   padding: 2rem;
@@ -117,4 +118,10 @@ nav ul.hide {
 #purpose {
   grid-column: 1/7;
   grid-row: 3/4;
+}
+
+#advertising {
+  grid-column: 1/7;
+  grid-row: 4/5;
+
 }

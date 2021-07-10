@@ -19,6 +19,7 @@ fetch(weatherURL)
     document.getElementById("humidity").textContent =
       jsObject.list[0].main.humidity;
 
+
 /* THREE DAY FORECAST */
 
 const threedayforecast = jsObject.list.filter((forecast) =>
