@@ -35,38 +35,47 @@
         </ul>  
       </nav>
 
-      <div class="herodiv">           
-        <picture class="homepic">
-          <source media="(max-width: 400px)" srcset="images/horses400.jpg">
-          <source media="(max-width: 800px)" srcset="images/horses800.jpg">
-          <source media="(max-width: 1200px)" srcset="images/horses1200.jpg">
-          <img src="images/horses.jpg" alt="Horses at Fort Worth Stockyards">                                 
-        </picture>                   
-    </div>
-
       <main>
 
-        <div class="home-grid">
-         
-        <section id="weather">
-          <div id="current">            
-              <h3>Fort Worth Weather</h3>
-              <p>Currently: <span id="conditions"></span></p>
-              <p>Temperature: <span id="temperature"></span>&#8457;</p>
-              <p>Humidity: <span id="humidity"></span>%</p>            
-          </div>
+        <div class="homepic">
+            <picture>
+              <source media="(max-width: 480px)" srcset="images/horses400.jpg">
+              <source media="(min-width: 481px) and (max-width: 839px)" srcset="images/horses800.jpg">
+              <source media="(min-width: 840px)" srcset="images/horses1200.jpg">
+              <img src="images/horses.jpg" alt="Horses at Fort Worth Stockyards">                                 
+            </picture>
+        </div>     
+    
+        <section class="weather">
+            <div id="current">            
+                <h3>Fort Worth Weather</h3>
+                <p>Currently: <span id="conditions"></span></p>
+                <p>Temperature: <span id="temperature"></span>&#8457;</p>
+                <p>Humidity: <span id="humidity"></span>%</p>            
+            </div>
           
-          <div id="forecast">
-            3 day forecast
+            <div id="forecast">
+                3 day forecast
 
           </div>
         </section>
 
-        <section id="events">
-          <h3>Mark Your Calendar!</h3>       
+        <section class="fwevents">
+          <h3>Mark Your Calendar!</h3>    
+          <p class="event">Jul 21 - 
+            Arts Fifth Avenue's Yoga with Julie Vitek - 
+            Recurring weekly on Wednesday</p>
+
+            <p class="event">Jul 21 - 
+              Bike and BBQ Guided Electric Bike Tour - 
+              Recurring weekly on Wednesday, Thursday, Friday until Nov. 03 2021</p>
+
+              <p class="event">Jul 21 - 
+                Date Night is Back at Coyote Drive-In Theater!</p>        
+        
         </section>
         
-        <section id="purpose">          
+        <section class="purpose">          
               <h3>OUR VISION</h3>
               <p>Drive the Fort Worth region to be the most thriving, inviting community 
                 for all.</p>
@@ -76,9 +85,8 @@
                 greater economic prosperity for all.</p>            
           </section>
 
-          <section id="advertising">
-            
-            <h3>Support Your Local Businesses</h3>
+          <h3>Support Your Local Businesses</h3>
+          <section class="advertising">           
               <div class="ads">                
                 <img src="images/ridglealogo.jpg">
                 <h4>Ridglea Country Club</h4>
@@ -102,16 +110,23 @@
                   Fort Worth TX 76118<br>
                   (817) 999-1075<br>
                   https://www.rios-group.com</p>
-              </div>
+              </div>      
               
+              <input type="submit" value="Join the Chamber" class="submitBtn">
           </section>
 
-          <section id="contactinfo"></section>
+          <section id="contactinfo">
 
-        </div>
+            
+          </section>
+
       </main>
 
-      <footer></footer>
+     <footer>          
+          &copy; <span id="currentyear"></span> Fort Worth Chamber of Commerce | 
+          Carolyn Sundrud | <a id="sitemap" href="https://carolynjae.github.io">Site Map</a>
+          <p><span id="year"></span><span id="days"></span></p>             
+     </footer>
 
       <script src="js/javascript.js"></script>
       <script src="js/weather.js"></script>
