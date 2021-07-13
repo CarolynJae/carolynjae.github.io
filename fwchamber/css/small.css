@@ -35,11 +35,9 @@ main {
     margin: 1rem;
 }
 
-.homepic {
-
+h2{ 
+  text-align: center;
 }
-
-
 /* ---NAVIGATION BAR FOR ALL PAGES -- */
 
 nav {
@@ -108,6 +106,67 @@ nav ul.hide {
   border-radius: 15px;  
 }
 
+/*--- JOIN THE CHAMBER FORM ---*/
+
+#joinus {
+  margin-top: 5rem;
+}
+
+form fieldset {
+  margin: 2rem;
+  background-color: white;
+  border: 1px solid #a3a3a3;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+form legend {
+  background-color: white;
+  color: #003363;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  border-top: 1px solid #a3a3a3;  
+  border-radius: 10px 10px 0 0;
+  font-size: 1.5rem;
+}
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #003363;
+  font-size: 1.2rem;
+}
+
+form label.top input, form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(38, 73, 94, 0.1);
+}
+
+form .sbs {
+  display: inline-block;
+  padding: .75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  color: white;
+  background-color: #b60000;
+  border: 6px solid #003363;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  padding: .75rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
 
 /*--- FOOTER ---*/
 
