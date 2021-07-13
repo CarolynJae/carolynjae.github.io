@@ -9,7 +9,7 @@
   z-index: 1; 
 }
 
-#members {
+.members {
   position: absolute;
   width: 150px;
   height: 50px;
@@ -19,7 +19,7 @@
   border-radius: 20px;  
 }
 
-#members a {  
+.members a {  
   font-family: "Lato", sans serif;
   font-size: 20px;
   text-decoration: none;
@@ -68,8 +68,7 @@ nav ul li a {
       color: white;      
       text-decoration: none;
       font-family: "Lato", sans serif;
-      font-size: 20px;
-      border: 3px solid #003363;
+      font-size: 20px;      
     }
   
 nav ul li.active a {
@@ -184,6 +183,28 @@ form input.submitBtn {
   border-radius: 15px;
   border: 1px solid #595959;
   box-shadow: 2px 2px 2px 2px #999;
+
+}
+
+/*--- CONTACT PAGE ---*/
+
+#board {
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+}
+
+.directors {
+  text-align: center;
+}
+
+.directors img {
+  border-radius: 20px;
+  border: 1px solid #595959;
+  box-shadow: 2px 2px 2px 2px #999; 
 
 }
 

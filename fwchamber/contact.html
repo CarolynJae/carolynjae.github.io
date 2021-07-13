@@ -18,7 +18,7 @@
 
           <a href="index.html"><img class="logo" src="images/fwlogo.png" alt="Fort Worth Logo"></a>
 
-          <div id="members">
+          <div class="members">
             <a id="login" href="membersonly.html">Member Login</a>          
           </div>  
 
@@ -37,42 +37,59 @@
 
       <main>
 
-        <section id="board">
-          <h2>Meet the Board of Directors</h2>
+        <h2>Meet the Board of Directors</h2>
 
-          <div>
+        <section id="board">
+          
+          <div class="directors">
             <img src="images/jenpic.jpg" alt="Jen Martin">
             <p>Jennifer Martin<br>Chair</p>          
           </div>
 
-          <div>
+          <div class="directors">
             <img src="images/gregpic.jpg" alt="Gregory Franklin ">
             <p>Gregory Franklin<br>Vice Chair</p>
           </div>
 
-          <div>
+          <div class="directors">
             <img src="images/stacypic.jpg" alt="Stacy Green">
             <p>Stacy Green<br>Chair of Finance</p>
           </div>
 
-          <div>
+          <div class="directors">
             <img src="images/davepic.jpg" alt="David Evans">
             <p>David Evans<br>Attorney</p>
           </div>
 
-          <div>
+          <div class="directors">
             <img src="images/tompic.jpg" alt="Thomas Scott">
             <p>Thomas Scott<br>Client Relations</p>
           </div>
 
-          <div>
+          <div class="directors">
             <img src="images/brianpic.jpg" alt=" Brian Jones">
             <p>Brian Jones<br>Public Relations</p>
           </div>
         </section>
+
+        <section class="contactus">
+
+          <form method="get" action="response.html">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <label class="top">First name* <input type="text" name="firstname" pattern="[a-zA-Z ]{5,}" required></label>
+                <label class="top">Last name* <input type="text" name="lastname" pattern="[a-zA-Z ]{5,}" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="name@gmail.com" required></label>            
+                
+                <legend>Comments</legend>
+                    <label class="top"><textarea name="comments" rows="8" cols="48"></textarea></label>
+                  
+            </fieldset>
+            </form>
+        </section>
        
              
-        <section id="contactinfo"></section>
+        <section class="contactinfo"></section>
 
       </main>
 
