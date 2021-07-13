@@ -168,6 +168,25 @@ form input.submitBtn {
   max-width: 20rem;
 }
 
+/*--- BUSINESS DIRECTORY ---*/
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+}
+
+.cards section {
+  background-color: white;
+  margin: 1rem;
+  padding: .5rem;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid #595959;
+  box-shadow: 2px 2px 2px 2px #999;
+
+}
+
 /*--- FOOTER ---*/
 
 footer {

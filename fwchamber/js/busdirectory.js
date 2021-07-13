@@ -11,7 +11,7 @@ fetch(getmyURL)
     for (let i = 0; i < businesses.length; i++) {
         var thisBusiness = businesses[i];
         let buscards = document.createElement("section");
-        let businessName = document.createElement("h2");  
+        let businessName = document.createElement("h3");  
         let businessAddress = document.createElement("p");
         let businessPhone = document.createElement("p");  
         let businessURL = document.createElement("p"); 
