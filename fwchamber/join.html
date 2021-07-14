@@ -51,10 +51,10 @@
               <label class="top">Business address <input type="text" name="baddress" pattern="[a-zA-Z ]{5,}"></label>
               <label class="top">Business website <input type="url" name="bwebsite"></label>
               
-              <legend>Please tell us about your business</legend>
-                    <label class="top"><textarea name="bdesciption" rows="8" cols="48"></textarea></label>
-                               
-          </fieldset>
+              <label for="businfo">Please tell us about your business:</label>
+              <textarea id="businfo" name="businfo" rows="8" cols="48"></textarea>
+              
+            </fieldset>
   
           <fieldset>
             <legend>Membership Level</legend>                           
@@ -78,14 +78,20 @@
               
             </fieldset>
 
-            <input type="submit" value="Join the Chamber" class="submitBtn">
-            <input type="reset">
+            <div class="formbuttons">
+              <input type="submit" value="Join the Chamber" class="submitBtn">
+              <input type="reset" value="Reset Form" class="resetBtn">
+            </div>
 
         </form>
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      &copy; <span id="currentyear"></span> Fort Worth Chamber of Commerce | 
+      Carolyn Sundrud | <a id="siteplan" href="https://carolynjae.github.io">Site Plan</a>
+      <p><span id="year"></span><span id="days"></span></p>  
+    </footer>
 
     <script src="js/javascript.js"></script>
 

@@ -17,6 +17,7 @@
   top: 10px;
   background-color: #b60000;
   border-radius: 20px;  
+  box-shadow: 2px 2px 2px 2px #999;
 }
 
 .members a {  
@@ -24,6 +25,23 @@
   font-size: 20px;
   text-decoration: none;
   color: white;
+}
+
+.joincoc {  
+  background-color: #b60000;
+  border-radius: 20px;  
+  box-shadow: 2px 2px 2px 2px #999;
+}
+
+.joincoc a {  
+  font-family: "Lato", sans serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.formbuttons {
+  align-content: center;
 }
 
 body {
@@ -108,7 +126,9 @@ nav ul.hide {
 /*--- JOIN THE CHAMBER FORM ---*/
 
 #joinus {
+  max-width: 80%;
   margin-top: 5rem;
+  padding-left: 10%;  
 }
 
 form fieldset {
@@ -142,29 +162,43 @@ form label.top input, form label.top select {
   font-size: 1rem;
   border: 1px solid #999;
   border-radius: 4px;
-  padding: .75rem;
+  padding: 12px 20px;
   color: #555;
   width: 100%;
-  max-width: 20rem;
+  max-width: 95%;
   background-color: rgba(38, 73, 94, 0.1);
 }
 
-form .sbs {
+.sbs {
   display: inline-block;
-  padding: .75rem 0;
+  padding: 1rem;
   color: #555;
 }
 
 form input.submitBtn {
   color: white;
   background-color: #b60000;
-  border: 6px solid #003363;
   font-size: 1.5rem;
   border-radius: 25px;
   padding: .75rem;
   margin: 0 0 2rem 2%;
   width: 96%;
-  max-width: 20rem;
+  max-width: 15rem;
+}
+
+form input.resetBtn {
+  color: white;
+  background-color: #595959;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  padding: .75rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 12rem;
+}
+
+.formbuttons {
+  margin-left: 24%;
 }
 
 /*--- BUSINESS DIRECTORY ---*/
@@ -220,6 +254,6 @@ footer {
   text-align: center;
 }
 
-#sitemap {
+#siteplan {
   color: white;
 }
