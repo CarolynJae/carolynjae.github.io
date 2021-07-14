@@ -7,8 +7,8 @@ fetch(weatherURL)
   .then((response) => response.json())
 
   .then((jsObject) => {
-    console.log(jsObject);
-    console.log(jsObject.list[0].main);
+  //  console.log(jsObject);
+  //  console.log(jsObject.list[0].main);
 
     document.getElementById("conditions").textContent =
       jsObject.list[0].weather[0].description;   
