@@ -12,6 +12,23 @@
       align-content: center;
     }
 
+    .weather {
+      grid-template-columns: 1fr 1fr;
+  
+    }
+
+    #current {
+      grid-column: 1/2;
+    }
+    
+    #forecast {
+      grid-column: 2/3;
+    }
+
+    .list {
+      display: block;
+    }
+
     #board {      
       grid-template-columns: 1fr 1fr 1fr;
     }

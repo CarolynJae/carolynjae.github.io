@@ -72,3 +72,10 @@ function toggleMenu() {
       slides[slideIndex-1].style.display = "block";
       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
+
+    /* --- DIRECTORY BUTTONS--- */
+
+    function myFunction() {
+      var element = document.getElementById("cards");
+      element.classList.toggle("list");
+    }
