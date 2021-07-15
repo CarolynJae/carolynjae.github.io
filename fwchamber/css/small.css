@@ -256,6 +256,8 @@ form input.resetBtn {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  border: 10px solid white;
+  box-shadow: 4px 4px 2px 2px #999;
 }
 
 /* Next & previous buttons */
@@ -300,7 +302,7 @@ form input.resetBtn {
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 16px 12px;
   position: absolute;
   top: 0;
 }
