@@ -8,21 +8,21 @@ fetch(weatherURL)
 
   .then((jsObject) => {
   //  console.log(jsObject);
-  //  console.log(jsObject.list[0].main);
+  //  console.log(jsObject.current[0].main);
 
     document.getElementById("conditions").textContent =
-      jsObject.list[0].weather[0].description;   
+      jsObject.current[0].weather[0].description;   
 
     document.getElementById("temperature").textContent =
-      Math.round(jsObject.list[0].main.temp);
+      Math.round(jsObject.current[0].temp);
     
     document.getElementById("humidity").textContent =
-      jsObject.list[0].main.humidity;
+      jsObject.current[0].humidity;
 
 
 /* THREE DAY FORECAST */
 
-const threedayforecast = jsObject.list.filter((forecast) =>
+const threedayforecast = jsObject.current.filter((forecast) =>
      forecast.dt_txt.includes("18:00:00")
    );
 
@@ -41,7 +41,7 @@ const threedayforecast = jsObject.list.filter((forecast) =>
      document.getElementById(dayElement).textContent = forecastDay;
      document.getElementById(iconElement).setAttribute("src", iconsrc);
      document.getElementById(iconElement).setAttribute("alt", desc);
-     document.getElementById(tempElement).textContent = Math.round(forecast.main.temp);          
+     document.getElementById(tempElement).textContent = Math.round(forecast.temp);          
    }   
  
  });

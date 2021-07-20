@@ -3,8 +3,7 @@
         {
             "busname": "Ridglea Country Club",
             "bustype": "Clubs, private",
-            "busaddress1": "3700 Bernie Anderson Dr.",
-            "busaddress2": "Fort Worth TX 76116",
+            "busaddress": "3700 Bernie Anderson Dr. Fort Worth TX 76116",
             "busphone": "(817) 732-8111",
             "buswebsite": "https://www.ridgleacountryclub.com",
             "busimage": "images/ridglealogo.jpg"
@@ -13,8 +12,7 @@
         {
             "busname": "Brookdale Senior Living",
             "bustype": "Retirement Community",
-            "busaddress1": "5301 Bryant Irvin Rd.",
-            "busaddress2": "Fort Worth TX 76132",
+            "busaddress": "5301 Bryant Irvin Rd. Fort Worth TX 76132",
             "busphone": "(682) 367-6248",
             "buswebsite": "https://www.brookdale.com/en.html",
             "busimage": "images/brookdalelogo.jpg"
@@ -23,8 +21,7 @@
         {
             "busname": "The Rios Group",
             "bustype": "Utilities",
-            "busaddress1": "7400 Sand St.",
-            "busaddress2": "Fort Worth TX 76118",
+            "busaddress": "7400 Sand St. Fort Worth TX 76118",
             "busphone": "(817) 999-1075",
             "buswebsite": "https://www.rios-group.com",
             "busimage": "images/rioslogo.jpg"

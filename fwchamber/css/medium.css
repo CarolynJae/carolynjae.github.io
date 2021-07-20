@@ -39,7 +39,7 @@
           align-content: center;
     }
 
-        .drectorylist.list {
+        .directorylist.list {
             grid-template-columns: 1fr;
         }
 

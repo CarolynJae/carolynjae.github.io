@@ -33,3 +33,22 @@ fetch(getmyURL)
       document.querySelector("div.cards").appendChild(buscards);            
     }
   });
+
+  
+    /* --- DIRECTORY BUTTONS--- */
+
+    var directoryList = document.getElementById("directorylist");
+    
+    document.addEventListener("click", function (event) {
+      if (!event.target.matches(".list")) return;
+    
+      event.preventDefault();
+      directoryList.classList.add("list");
+    });
+    
+    document.addEventListener("click", function (event) {
+      if (!event.target.matches(".grid")) return;
+          
+      event.preventDefault();
+      directoryList.classList.remove("list");
+    });
