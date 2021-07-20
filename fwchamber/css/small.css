@@ -10,7 +10,7 @@ h6 {
 }
 
 h1 {
-  margin-top: 5rem;
+  margin: 5rem;
 }
 
 h1, 
@@ -240,13 +240,26 @@ form input.resetBtn {
 
 /*--- BUSINESS DIRECTORY ---*/
 
-.cards {
+.busdirectory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.busbuttons {
+  display: none;
+}
+
+.directorylist {
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
 }
 
 .cards section {
+  width: 320px;
+  height: 320px;
   background-color: white;
   margin: 1rem;
   padding: .5rem;
@@ -254,8 +267,8 @@ form input.resetBtn {
   border-radius: 15px;
   border: 1px solid #595959;
   box-shadow: 2px 2px 2px 2px #999;
-
 }
+
 
 /*--- CONTACT PAGE ---*/
 

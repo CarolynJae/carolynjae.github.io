@@ -75,7 +75,18 @@ function toggleMenu() {
 
     /* --- DIRECTORY BUTTONS--- */
 
-    function myFunction() {
-      var element = document.getElementById("cards");
-      element.classList.toggle("list");
-    }
+    var directoryList = document.getElementById("directorylist");
+    
+    document.addEventListener("click", function (event) {
+      if (!event.target.matches(".list")) return;
+    
+      event.preventDefault();
+      directoryList.classList.add("list");
+    });
+    
+    document.addEventListener("click", function (event) {
+      if (!event.target.matches(".grid")) return;
+          
+      event.preventDefault();
+      directoryList.classList.remove("list");
+    });

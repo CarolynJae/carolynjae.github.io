@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Fort Worth Chamber of Commerce">
     <title>Fort Worth Chamber of Commerce</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Load Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -37,13 +39,21 @@
 
       <main>
         <h1>Business Directory</h1>
-        <button onclick="myFunction()">&#x25a6;</button>
-        <div id="grid"></div>     
-        
-        <button onclick="myFunction()">&#9776;</button>
-        <div id="list"></div>
+                  
+<!-- Buttons to choose list or grid view -->
+        <div class="busdirectory">
 
-        <div class="cards"></div>
+        <div class="busbuttons">
+            <div class="list"><i class="fa fa-bars"></i></div>
+            <div class="grid"><i class="fa fa-th-large"></i></div>
+        </div>
+
+        <div class="directorylist">
+            <div class="cards"></div>
+        </div>   
+        
+      </div>
+
     </main>
 
     <footer>

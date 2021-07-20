@@ -18,4 +18,31 @@
         padding: .6rem 1rem;
     }
 
+    .busbuttons {
+        display: flex;
+        float: right;
+      }
+      
+      .busbuttons div {
+        margin: 0px 10px;
+        color: #000000;
+        cursor: pointer;
+      }
+      
+      .busbuttons div > * {
+        pointer-events: none;
+      }
+
+      .directorylist {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-content: center;
+    }
+
+        .drectorylist.list {
+            grid-template-columns: 1fr;
+        }
+
+   
+
 }
