@@ -20,9 +20,7 @@ fetch(weatherURL)
 
 /* THREE DAY FORECAST */
 
-    const
-
-     for (let i = 0; i < threedayforecast.length; i++) {
+    for (let i = 0; i < 4; i++) {
      var daily = threedayforecast[i];
      var tempElement = "temp" + i;
      var iconElement = "icon" + i;
