@@ -244,12 +244,6 @@ form input.resetBtn {
   display: none;
 }
 
-.grids {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: center;
-}
-
 .cards section {
   width: 320px;
   height: 320px;

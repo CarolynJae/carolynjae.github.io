@@ -6,45 +6,34 @@ fetch(getmyURL)
   })
 
   .then(function (jsonObject) {
-    
-    const fwbusiness = jsonObject["fwbusiness"];
-    for (let i = 0; i < fwbusiness.length; i++) {        
+    console.table(jsonObject);
+    const businesses = jsonObject["businesses"];
+    for (let i = 0; i < businesses.length; i++) {
+        var thisBusiness = businesses[i];
         let buscards = document.createElement("section");
-
-        let name = document.createElement("h3");  
-        name.innerHTML = fwbusiness[i].busname;
-
-        let address = document.createElement("p");
-        address.innerHTML = fwbusiness[i].busstreet;
-
-        let city = document.createElement("p");
-        city.innerHTML = fwbusiness[i].buscity;
-
-        let phone = document.createElement("p");  
-        phone.innerHTML = fwbusiness[i].busphone;
-
-        let website = document.createElement("p"); 
-        website.innerHTML = fwbusiness[i].buswebsite;
-
+        let businessName = document.createElement("h3");  
+        let businessStreet = document.createElement("p");
+        let businessCity = document.createElement("p");
+        let businessPhone = document.createElement("p");  
+        let businessURL = document.createElement("p"); 
         let businessLogo = document.createElement("img");
-          businessLogo.setAttribute("src", fwbusiness.busimage);
-          businessLogo.setAttribute("alt", fwbusiness.busname + "Logo");
 
-      buscards.append(businessLogo, name, address, city, phone, website);
-      
+      businessName.textContent = thisBusiness.busname;
+      businessStreet.textContent = thisBusiness.busstreet;
+      businessCity.textContent = thisBusiness.buscity;
+      businessPhone.textContent = thisBusiness.busphone;
+      businessURL.textContent = thisBusiness.buswebsite;
+      businessLogo.setAttribute("src", thisBusiness.busimage);
+      businessLogo.setAttribute("alt", thisBusiness.busname + "Logo");
+
+      buscards.appendChild(businessLogo);
+      buscards.appendChild(businessName);
+      buscards.appendChild(businessStreet);
+      buscards.appendChild(businessCity);
+      buscards.appendChild(businessPhone);
+      buscards.appendChild(businessURL);
+
       document.querySelector("div.cards").appendChild(buscards);            
     }
   });
-
   
-    /* --- DIRECTORY BUTTONS--- */
-
-  function gridView() {
-    let div = document.querySelector("div.cards");
-    div.classList.add("grids");
-  }
-
-  function listView() {
-    let div = document.querySelector("div.cards");
-    div.classList.remove("grids");
-  }
