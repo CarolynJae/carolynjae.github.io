@@ -33,16 +33,12 @@
         pointer-events: none;
       }
 
-      .directorylist {
+      .grids {
           display: grid;
           grid-template-columns: 1fr 1fr;
           align-content: center;
     }
 
-        .directorylist.list {
-            grid-template-columns: 1fr;
-        }
-
-   
+         
 
 }

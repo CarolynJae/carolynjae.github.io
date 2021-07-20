@@ -19,15 +19,12 @@
       grid-column: 2/3;
     }
 
-    .directorylist {
+    .grids {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       align-content: center;
     }
 
-    .directorylist.list {
-      grid-template-columns: 1fr;
-    }
 
     #board {      
       grid-template-columns: 1fr 1fr 1fr;

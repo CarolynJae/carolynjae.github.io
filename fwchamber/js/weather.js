@@ -7,41 +7,37 @@ fetch(weatherURL)
   .then((response) => response.json())
 
   .then((jsObject) => {
-  //  console.log(jsObject);
-  //  console.log(jsObject.current[0].main);
-
+ 
     document.getElementById("conditions").textContent =
-      jsObject.current[0].weather[0].description;   
+      jsObject.current.weather[0].description;   
 
     document.getElementById("temperature").textContent =
-      Math.round(jsObject.current[0].temp);
+      Math.round(jsObject.current.temp);
     
     document.getElementById("humidity").textContent =
-      jsObject.current[0].humidity;
+      jsObject.current.humidity;
 
 
 /* THREE DAY FORECAST */
 
-const threedayforecast = jsObject.current.filter((forecast) =>
-     forecast.dt_txt.includes("18:00:00")
-   );
+    const
 
-   for (let i = 0; i < threedayforecast.length; i++) {
-     var forecast = threedayforecast[i];
+     for (let i = 0; i < threedayforecast.length; i++) {
+     var daily = threedayforecast[i];
      var tempElement = "temp" + i;
      var iconElement = "icon" + i;
      var dayElement = "day" + i;
-     var forecastDate = new Date(forecast.dt_txt);
+     var forecastDate = new Date(daily.dt);
      var forecastDay = days[forecastDate.getDay()];
 
-     const desc = forecast.weather[0].description;
+     const desc = daily.weather.description;
      const iconsrc = 
-     "https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png";
+     "https://openweathermap.org/img/w/" + daily.weather.icon + ".png";
 
      document.getElementById(dayElement).textContent = forecastDay;
      document.getElementById(iconElement).setAttribute("src", iconsrc);
      document.getElementById(iconElement).setAttribute("alt", desc);
-     document.getElementById(tempElement).textContent = Math.round(forecast.temp);          
+     document.getElementById(tempElement).textContent = Math.round(daily.temp.day);          
    }   
  
  });

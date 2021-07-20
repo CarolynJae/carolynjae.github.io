@@ -6,30 +6,32 @@ fetch(getmyURL)
   })
 
   .then(function (jsonObject) {
-    console.table(jsonObject);
-    const businesses = jsonObject["businesses"];
-    for (let i = 0; i < businesses.length; i++) {
-        var thisBusiness = businesses[i];
+    
+    const fwbusiness = jsonObject["fwbusiness"];
+    for (let i = 0; i < fwbusiness.length; i++) {        
         let buscards = document.createElement("section");
-        let businessName = document.createElement("h3");  
-        let businessAddress = document.createElement("p");
-        let businessPhone = document.createElement("p");  
-        let businessURL = document.createElement("p"); 
+
+        let name = document.createElement("h3");  
+        name.innerHTML = fwbusiness[i].busname;
+
+        let address = document.createElement("p");
+        address.innerHTML = fwbusiness[i].busstreet;
+
+        let city = document.createElement("p");
+        city.innerHTML = fwbusiness[i].buscity;
+
+        let phone = document.createElement("p");  
+        phone.innerHTML = fwbusiness[i].busphone;
+
+        let website = document.createElement("p"); 
+        website.innerHTML = fwbusiness[i].buswebsite;
+
         let businessLogo = document.createElement("img");
+          businessLogo.setAttribute("src", fwbusiness.busimage);
+          businessLogo.setAttribute("alt", fwbusiness.busname + "Logo");
 
-      businessName.textContent = thisBusiness.busname;
-      businessAddress.textContent = thisBusiness.busaddress;
-      businessPhone.textContent = thisBusiness.busphone;
-      businessURL.textContent = thisBusiness.buswebsite;
-      businessLogo.setAttribute("src", thisBusiness.busimage);
-      businessLogo.setAttribute("alt", thisBusiness.busname + "Logo");
-
-      buscards.appendChild(businessLogo);
-      buscards.appendChild(businessName);
-      buscards.appendChild(businessAddress);
-      buscards.appendChild(businessPhone);
-      buscards.appendChild(businessURL);
-
+      buscards.append(businessLogo, name, address, city, phone, website);
+      
       document.querySelector("div.cards").appendChild(buscards);            
     }
   });
@@ -37,18 +39,12 @@ fetch(getmyURL)
   
     /* --- DIRECTORY BUTTONS--- */
 
-    var directoryList = document.getElementById("directorylist");
-    
-    document.addEventListener("click", function (event) {
-      if (!event.target.matches(".list")) return;
-    
-      event.preventDefault();
-      directoryList.classList.add("list");
-    });
-    
-    document.addEventListener("click", function (event) {
-      if (!event.target.matches(".grid")) return;
-          
-      event.preventDefault();
-      directoryList.classList.remove("list");
-    });
+  function gridView() {
+    let div = document.querySelector("div.cards");
+    div.classList.add("grids");
+  }
+
+  function listView() {
+    let div = document.querySelector("div.cards");
+    div.classList.remove("grids");
+  }

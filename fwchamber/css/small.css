@@ -240,18 +240,11 @@ form input.resetBtn {
 
 /*--- BUSINESS DIRECTORY ---*/
 
-.busdirectory {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  flex-direction: column;
-}
 .busbuttons {
   display: none;
 }
 
-.directorylist {
+.grids {
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
