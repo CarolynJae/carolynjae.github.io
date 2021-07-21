@@ -6,7 +6,7 @@ fetch(getmyURL)
   })
 
   .then(function (jsonObject) {
-    console.table(jsonObject);
+  //  console.table(jsonObject);
     const businesses = jsonObject["businesses"];
     for (let i = 0; i < businesses.length; i++) {
         var thisBusiness = businesses[i];
@@ -37,3 +37,4 @@ fetch(getmyURL)
     }
   });
   
+

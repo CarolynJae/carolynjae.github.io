@@ -19,13 +19,6 @@
       grid-column: 2/3;
     }
 
-    .grids {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      align-content: center;
-    }
-
-
     #board {      
       grid-template-columns: 1fr 1fr 1fr;
     }

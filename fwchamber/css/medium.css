@@ -17,11 +17,6 @@
         border: 3px solid #003363;
         padding: .6rem 1rem;
     }
-
-    .busbuttons {
-        display: flex;
-        float: right;
-      }
       
       .busbuttons div {
         margin: 0px 10px;
@@ -31,14 +26,6 @@
       
       .busbuttons div > * {
         pointer-events: none;
-      }
-
-      .grids {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          align-content: center;
-    }
-
-         
+      }         
 
 }
